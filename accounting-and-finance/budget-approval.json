@@ -140,8 +140,8 @@
                     "discard": false
                 }
             ],
-            "name": "Budget Approval",
-            "description": "Our Budget Approval process enhances financial accuracy, reduces risks, ensures compliance, and empowers leadership with data-driven decisions, promoting fiscal health.",
+            "name": "Test Budget Approval",
+            "description": "Test - Our Budget Approval process enhances financial accuracy, reduces risks, ensures compliance, and empowers leadership with data-driven decisions, promoting fiscal health.",
             "process_manager": "",
             "process_manager_id": null,
             "attributes": {
