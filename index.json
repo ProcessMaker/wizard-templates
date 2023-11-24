@@ -1,8 +1,8 @@
 {
     "accounting-and-finance": [
         {
-            "name": "Test Budget Approval Process (TESTING ONLY)",
-            "description": "Test - Our Budget Approval process enhances financial accuracy, reduces risks, ensures compliance, and empowers leadership with data-driven decisions, promoting fiscal health.",
+            "name": "Test Budget Approval Process (TESTING ONLY) ",
+            "description": "Test - Our Budget Approval process enhances financial accuracy, reduces risks, ensures compliance, and empowers leadership with data-driven decisions, promoting fiscal health. (THIS PROCESS SHOUL BE DELETED, ONLY FOR TESTING)",
             "hash": null,
             "mod_time": "2023-11-24 20:32:39",
             "relative_path": ".\/accounting-and-finance\/budget-approval.json",
