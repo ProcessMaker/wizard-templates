@@ -7,7 +7,7 @@ function compute_hash($data) {
 function update_readme($categories) {
     $readme = fopen("README.md", "w");
     fwrite($readme,
-        "# Wizard Templates\n Enhance the usability and functionality of ProcessMaker. These templates offer seamless integration with various tools by allowing users to declare their accounts. Users can easily select a template of their choice, eliminating the need to go through the modeler."
+        "# Wizard Templates\nEnhance the usability and functionality of ProcessMaker. These templates offer seamless integration with various tools by allowing users to declare their accounts. Users can easily select a template of their choice, eliminating the need to go through the modeler."
     );
     ksort($categories);  // Sort categories alphabetically
     foreach ($categories as $category => $templates) {
