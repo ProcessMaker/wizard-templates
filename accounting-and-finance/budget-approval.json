@@ -2,7 +2,7 @@
     "type": "process_package",
     "version": "2",
     "root": "99d6304a-136d-4de3-ba84-a91c36042016",
-    "name": "Test Budget Approval Process (TESTING ONLY)",
+    "name": "Test Budget Approval Process (TESTING ONLY) ",
     "export": {
         "99d6304a-136d-4de3-ba84-a91c36042016": {
             "exporter": "ProcessMaker\\ImportExport\\Exporters\\ProcessExporter",
