@@ -1,5 +1,5 @@
 {
-    "type": "process_package",
+    "type": "wizard_process_package",
     "version": "2",
     "root": "9aab5ccb-369b-4126-a298-d5dce5b979e1",
     "name": "Process",
