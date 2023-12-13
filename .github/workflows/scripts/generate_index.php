@@ -16,14 +16,20 @@ function update_readme($categories) {
         fwrite($readme, "\n## $category\n");
         // Sort templates alphabetically within each category
         usort($templates, function($a, $b) { return strcmp($a['name'], $b['name']); });
+        
         foreach ($templates as $template) {
-            $string = "- **[{$template['name']}](/{$template['relative_path']})**: {$template['description']}";
-            if ($template['version']) {
-                $string .= " (Version {$template['version']})\n";
-            } else {
-                $string .= "\n";
+            // print_r($template);
+            // die();
+            foreach ($template as $value) {
+                $string = "- **[{$value['name']}](/{$value['relative_path']})**: {$value['description']}";
+                if ($value['version']) {
+                    $string .= " (Version {$value['version']})\n";
+                } else {
+                    $string .= "\n";
+                }
+                fwrite($readme, $string);
             }
-            fwrite($readme, $string);
+
         }
     }
     fclose($readme);
@@ -32,6 +38,7 @@ function update_readme($categories) {
 function main() {
     $root_dir = ".";
     $categories = [];
+
     $rii = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($root_dir));
 
     foreach ($rii as $file) {
@@ -41,7 +48,12 @@ function main() {
 
         $filepath = $file->getPathname();
         $data = json_decode(file_get_contents($filepath), true);
-        $category = str_replace("./", "", $file->getPath());
+
+        $categoryPath = str_replace("./", "", $file->getPath());
+
+        $categorySegments = explode("/", $categoryPath);
+        
+
         $version = null;
         if (isset($data["export"][$data["root"]]["attributes"])) {
             if (array_key_exists("version", $data["export"][$data["root"]]["attributes"])) {
@@ -60,12 +72,18 @@ function main() {
             "version" => $version,
         ];
 
-        if (!isset($categories[$category])) {
-            $categories[$category] = [];
+        $currentCategory = &$categories;
+        foreach ($categorySegments as $segment) {
+            if (!isset($currentCategory[$segment])) {
+                $currentCategory[$segment] = [];
+            }
+            $currentCategory = &$currentCategory[$segment];
         }
 
-        $categories[$category][] = $template_info;
+        $currentCategory[] = $template_info;
+
     }
+
 
     ksort($categories);  // Sort categories alphabetically
     foreach ($categories as $category => $templates) {
@@ -78,5 +96,6 @@ function main() {
 
     update_readme($categories);
 }
+
 
 main();
