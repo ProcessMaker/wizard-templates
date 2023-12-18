@@ -1,8 +1,8 @@
 {
     "accounting-and-sales": {
         "sales-approval": {
-            "helper_process": "",
-            "template_process": "",
+            "helper_process": ".\/accounting-and-sales\/sales-approval\/process_helper_export.json",
+            "template_process": ".\/accounting-and-sales\/sales-approval\/process_template_export.json",
             "config_collection": "",
             "template_details": {
                 "name": "",
@@ -18,8 +18,8 @@
             "connected_accounts": []
         },
         "sales-pulse": {
-            "helper_process": "",
-            "template_process": "",
+            "helper_process": ".\/accounting-and-sales\/sales-pulse\/process_helper_export.json",
+            "template_process": ".\/accounting-and-sales\/sales-pulse\/process_template_export.json",
             "config_collection": "",
             "template_details": {
                 "name": "",
@@ -37,9 +37,9 @@
     },
     "accounting-and-finance": {
         "expence-approval": {
-            "helper_process": "",
-            "template_process": "",
-            "config_collection": "",
+            "helper_process": ".\/accounting-and-finance\/expence-approval\/process_helper_export.json",
+            "template_process": ".\/accounting-and-finance\/expence-approval\/process_template_export.json",
+            "config_collection": ".\/accounting-and-finance\/expence-approval\/configuration_collection_export.json",
             "template_details": {
                 "name": "",
                 "card-excerpt": "",
@@ -54,9 +54,9 @@
             "connected_accounts": []
         },
         "pulse": {
-            "helper_process": "",
-            "template_process": "",
-            "config_collection": "",
+            "helper_process": ".\/accounting-and-finance\/pulse\/process_helper_export.json",
+            "template_process": ".\/accounting-and-finance\/pulse\/process_template_export.json",
+            "config_collection": ".\/accounting-and-finance\/pulse\/configuration_collection_export.json",
             "template_details": {
                 "name": "",
                 "card-excerpt": "",
