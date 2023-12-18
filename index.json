@@ -1,44 +1,121 @@
 {
-    "accounting-and-finance": [
-        [
-            {
-                "name": "Pulse helper process",
-                "description": "Pulse helper process",
-                "hash": null,
-                "mod_time": "2023-12-01 20:51:38",
-                "relative_path": ".\/accounting-and-finance\/expence-approval\/expence-approval-helper-process.json",
-                "uuid": "9abf4abc-8bf3-4e4d-9228-bf8799121638",
-                "version": null
+    "accounting-and-sales": {
+        "helper_process": ".\/accounting-and-sales\/sales-approval\/expence-approval-helper-process.json",
+        "template_process": ".\/accounting-and-sales\/sales-approval\/expence-approval-helper-process.json",
+        "config_collection": ".\/accounting-and-sales\/sales-approval\/expence-approval-helper-process.json",
+        "template_details": {
+            "name": "",
+            "card-excerpt": "",
+            "modal-excerpt": "",
+            "modal-description": ""
+        },
+        "assets": {
+            "icon": "",
+            "card-background": "",
+            "slides": []
+        },
+        "connected_accounts": [],
+        "sales-approval": {
+            "helper_process": ".\/accounting-and-sales\/sales-approval\/expence-approval-helper-process.json",
+            "template_process": ".\/accounting-and-sales\/sales-approval\/expence-approval-helper-process.json",
+            "config_collection": ".\/accounting-and-sales\/sales-approval\/expence-approval-helper-process.json",
+            "template_details": {
+                "name": "",
+                "card-excerpt": "",
+                "modal-excerpt": "",
+                "modal-description": ""
             },
-            {
-                "name": "Template",
-                "description": "Template",
-                "hash": "133bb71a702ac18f66b7bd63eb5f97545b93f8b4",
-                "mod_time": "2023-12-01 20:44:24",
-                "relative_path": ".\/accounting-and-finance\/expence-approval\/expence-approval-template.json",
-                "uuid": "9abf4889-a1ad-41a2-b6db-929afcdcfe19",
-                "version": "1"
-            }
-        ],
-        [
-            {
-                "name": "Pulse helper process",
-                "description": "Pulse helper process",
-                "hash": null,
-                "mod_time": "2023-12-01 20:51:38",
-                "relative_path": ".\/accounting-and-finance\/pulse\/pulse-helper-process.json",
-                "uuid": "9abf4abc-8bf3-4e4d-9228-bf8799121638",
-                "version": null
+            "assets": {
+                "icon": "",
+                "card-background": "",
+                "slides": []
             },
-            {
-                "name": "Template",
-                "description": "Template",
-                "hash": "133bb71a702ac18f66b7bd63eb5f97545b93f8b4",
-                "mod_time": "2023-12-01 20:44:24",
-                "relative_path": ".\/accounting-and-finance\/pulse\/pulse-template.json",
-                "uuid": "9abf4889-a1ad-41a2-b6db-929afcdcfe19",
-                "version": "1"
-            }
-        ]
-    ]
+            "connected_accounts": []
+        },
+        "sales-pulse": {
+            "helper_process": ".\/accounting-and-sales\/sales-pulse\/pulse-template.json",
+            "template_process": ".\/accounting-and-sales\/sales-pulse\/pulse-template.json",
+            "config_collection": ".\/accounting-and-sales\/sales-pulse\/pulse-template.json",
+            "template_details": {
+                "name": "",
+                "card-excerpt": "",
+                "modal-excerpt": "",
+                "modal-description": ""
+            },
+            "assets": {
+                "icon": "",
+                "card-background": "",
+                "slides": []
+            },
+            "connected_accounts": []
+        }
+    },
+    ".": {
+        "helper_process": ".\/index.json",
+        "template_process": ".\/index.json",
+        "config_collection": ".\/index.json",
+        "template_details": {
+            "name": "",
+            "card-excerpt": "",
+            "modal-excerpt": "",
+            "modal-description": ""
+        },
+        "assets": {
+            "icon": "",
+            "card-background": "",
+            "slides": []
+        },
+        "connected_accounts": []
+    },
+    "accounting-and-finance": {
+        "helper_process": ".\/accounting-and-finance\/expence-approval\/configuration_collection_export.json",
+        "template_process": ".\/accounting-and-finance\/expence-approval\/configuration_collection_export.json",
+        "config_collection": ".\/accounting-and-finance\/expence-approval\/configuration_collection_export.json",
+        "template_details": {
+            "name": "",
+            "card-excerpt": "",
+            "modal-excerpt": "",
+            "modal-description": ""
+        },
+        "assets": {
+            "icon": "",
+            "card-background": "",
+            "slides": []
+        },
+        "connected_accounts": [],
+        "expence-approval": {
+            "helper_process": [],
+            "template_process": [],
+            "config_collection": [],
+            "template_details": {
+                "name": "",
+                "card-excerpt": "",
+                "modal-excerpt": "",
+                "modal-description": ""
+            },
+            "assets": {
+                "icon": "",
+                "card-background": "",
+                "slides": []
+            },
+            "connected_accounts": []
+        },
+        "pulse": {
+            "helper_process": [],
+            "template_process": [],
+            "config_collection": [],
+            "template_details": {
+                "name": "",
+                "card-excerpt": "",
+                "modal-excerpt": "",
+                "modal-description": ""
+            },
+            "assets": {
+                "icon": "",
+                "card-background": "",
+                "slides": []
+            },
+            "connected_accounts": []
+        }
+    }
 }
