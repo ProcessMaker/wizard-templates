@@ -2,7 +2,7 @@
     "type": "process_templates_package",
     "version": "2",
     "root": "9abf4889-a1ad-41a2-b6db-929afcdcfe19",
-    "name": "Template",
+    "name": "Pulse Template",
     "export": {
         "9abf4889-a1ad-41a2-b6db-929afcdcfe19": {
             "exporter": "ProcessMaker\\ImportExport\\Exporters\\TemplateExporter",

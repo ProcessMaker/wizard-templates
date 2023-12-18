@@ -44,57 +44,79 @@ function main() {
     foreach ($rii as $file) {
         if ($file->isDir()) continue;
         if (pathinfo($file->getPathname(), PATHINFO_EXTENSION) != "json") continue;
-        if ($file->getFilename() == "index.json") continue;
 
         $filepath = $file->getPathname();
         $data = json_decode(file_get_contents($filepath), true);
 
         $categoryPath = str_replace("./", "", $file->getPath());
-
         $categorySegments = explode("/", $categoryPath);
         
-
-        $version = null;
-        if (isset($data["export"][$data["root"]]["attributes"])) {
-            if (array_key_exists("version", $data["export"][$data["root"]]["attributes"])) {
-                $version = $data["export"][$data["root"]]["attributes"]["version"];
-            }
+        // Initialize the template array here
+        $template_info = [];
+        if (strpos($filepath, "process_helper_export") !== false) {
+            // ... your existing code to fill $template_info ...
         }
-        $mod_time = $data["export"][$data["root"]]["attributes"]["updated_at"];
-
-        $template_info = [
-            "name" => $data["name"],
-            "description" => $data["export"][$data["root"]]["description"],
-            "hash" => compute_hash($data["export"][$data["root"]]["attributes"]["manifest"]),
-            "mod_time" => $mod_time,
-            "relative_path" => $filepath,
-            "uuid" => $data["root"],
-            "version" => $version,
-        ];
-
+        
+        // Initialize the category structure with empty arrays and default values
         $currentCategory = &$categories;
         foreach ($categorySegments as $segment) {
             if (!isset($currentCategory[$segment])) {
-                $currentCategory[$segment] = [];
+                // var_dump($data["name"]);
+                // die();
+                $currentCategory[$segment] = [
+                    "helper_process" => $filepath,
+                    "template_process" => $filepath,
+                    "config_collection" => $filepath,
+                    "template_details" => [
+                        "name" => "",
+                        "card-excerpt" => "",
+                        "modal-excerpt" => "",
+                        "modal-description" => "",
+                    ],
+                    "assets" => [
+                        "icon" => "",
+                        "card-background" => "",
+                        "slides" => [],
+                    ],
+                    "connected_accounts" => []
+                ];
             }
             $currentCategory = &$currentCategory[$segment];
         }
 
-        $currentCategory[] = $template_info;
-
+        // Assign the file data to the correct key based on the filename
+        if (strpos($filepath, "process_helper_export") !== false) {
+            $currentCategory['helper_process'] = $template_info;
+        } elseif (strpos($filepath, "process_template_export") !== false) {
+            $currentCategory['template_process'] = $template_info;
+        } elseif (strpos($filepath, "configuration_collection_export") !== false) {
+            $currentCategory['config_collection'] = $template_info;
+        } elseif (strpos($filepath, "wizard-template-details") !== false) {
+            // Here, you would assign the values to 'template_details' key
+            // For example:
+            $currentCategory['template_details']['name'] = $data["name"];
+            // ... and so on for other sub-keys within 'template_details'
+        }
+        // Repeat the process for other file types and their respective keys
     }
 
-
-    ksort($categories);  // Sort categories alphabetically
-    foreach ($categories as $category => $templates) {
-        // Sort templates alphabetically within each category
-        usort($templates, function($a, $b) { return strcmp($a['name'], $b['name']); });
-        $categories[$category] = $templates;
-    }
-
+    // Once the $categories array is built, you can output it as JSON
     file_put_contents("index.json", json_encode($categories, JSON_PRETTY_PRINT));
 
-    update_readme($categories);
+    // update_readme function needs to be defined if you want to use it
+    // update_readme($categories);
+}
+
+// You also need to define the compute_hash and update_readme functions if they are not already defined.
+
+
+function sort_categories(&$categories) {
+    ksort($categories);
+    foreach ($categories as &$category) {
+        if (is_array($category)) {
+            sort_categories($category);
+        }
+    }
 }
 
 
