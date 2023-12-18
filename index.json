@@ -1,24 +1,9 @@
 {
     "accounting-and-sales": {
-        "helper_process": ".\/accounting-and-sales\/sales-approval\/expence-approval-helper-process.json",
-        "template_process": ".\/accounting-and-sales\/sales-approval\/expence-approval-helper-process.json",
-        "config_collection": ".\/accounting-and-sales\/sales-approval\/expence-approval-helper-process.json",
-        "template_details": {
-            "name": "",
-            "card-excerpt": "",
-            "modal-excerpt": "",
-            "modal-description": ""
-        },
-        "assets": {
-            "icon": "",
-            "card-background": "",
-            "slides": []
-        },
-        "connected_accounts": [],
         "sales-approval": {
-            "helper_process": ".\/accounting-and-sales\/sales-approval\/expence-approval-helper-process.json",
-            "template_process": ".\/accounting-and-sales\/sales-approval\/expence-approval-helper-process.json",
-            "config_collection": ".\/accounting-and-sales\/sales-approval\/expence-approval-helper-process.json",
+            "helper_process": "",
+            "template_process": "",
+            "config_collection": "",
             "template_details": {
                 "name": "",
                 "card-excerpt": "",
@@ -33,9 +18,9 @@
             "connected_accounts": []
         },
         "sales-pulse": {
-            "helper_process": ".\/accounting-and-sales\/sales-pulse\/pulse-template.json",
-            "template_process": ".\/accounting-and-sales\/sales-pulse\/pulse-template.json",
-            "config_collection": ".\/accounting-and-sales\/sales-pulse\/pulse-template.json",
+            "helper_process": "",
+            "template_process": "",
+            "config_collection": "",
             "template_details": {
                 "name": "",
                 "card-excerpt": "",
@@ -50,43 +35,11 @@
             "connected_accounts": []
         }
     },
-    ".": {
-        "helper_process": ".\/index.json",
-        "template_process": ".\/index.json",
-        "config_collection": ".\/index.json",
-        "template_details": {
-            "name": "",
-            "card-excerpt": "",
-            "modal-excerpt": "",
-            "modal-description": ""
-        },
-        "assets": {
-            "icon": "",
-            "card-background": "",
-            "slides": []
-        },
-        "connected_accounts": []
-    },
     "accounting-and-finance": {
-        "helper_process": ".\/accounting-and-finance\/expence-approval\/configuration_collection_export.json",
-        "template_process": ".\/accounting-and-finance\/expence-approval\/configuration_collection_export.json",
-        "config_collection": ".\/accounting-and-finance\/expence-approval\/configuration_collection_export.json",
-        "template_details": {
-            "name": "",
-            "card-excerpt": "",
-            "modal-excerpt": "",
-            "modal-description": ""
-        },
-        "assets": {
-            "icon": "",
-            "card-background": "",
-            "slides": []
-        },
-        "connected_accounts": [],
         "expence-approval": {
-            "helper_process": [],
-            "template_process": [],
-            "config_collection": [],
+            "helper_process": ".\/accounting-and-finance\/expence-approval\/process_helper_export.json",
+            "template_process": ".\/accounting-and-finance\/expence-approval\/process_template_export.json",
+            "config_collection": ".\/accounting-and-finance\/expence-approval\/configuration_collection_export.json",
             "template_details": {
                 "name": "",
                 "card-excerpt": "",
@@ -101,9 +54,9 @@
             "connected_accounts": []
         },
         "pulse": {
-            "helper_process": [],
-            "template_process": [],
-            "config_collection": [],
+            "helper_process": ".\/accounting-and-finance\/pulse\/process_helper_export.json",
+            "template_process": ".\/accounting-and-finance\/pulse\/process_template_export.json",
+            "config_collection": ".\/accounting-and-finance\/pulse\/configuration_collection_export.json",
             "template_details": {
                 "name": "",
                 "card-excerpt": "",
