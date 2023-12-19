@@ -18,8 +18,6 @@ function update_readme($categories) {
         usort($templates, function($a, $b) { return strcmp($a['name'], $b['name']); });
         
         foreach ($templates as $template) {
-            // print_r($template);
-            // die();
             foreach ($template as $value) {
                 $string = "- **[{$value['name']}](/{$value['relative_path']})**: {$value['description']}";
                 if ($value['version']) {
@@ -35,157 +33,161 @@ function update_readme($categories) {
     fclose($readme);
 }
 
-function main() {
-    $root_dir = ".";
+function main()
+{
+    $rootDirectory = ".";
     $categories = [];
 
-    $verticals = new DirectoryIterator($root_dir);
-    foreach ($verticals as $fileInfo) {
-        if ($fileInfo->isDot() || strpos($fileInfo->getBasename(), '.') === 0 ) {continue;}
-        if ($fileInfo->isDir()) {
-            // Set up the category directories
-            $currentCategory = explode("/", $fileInfo->getPathname())[1];
-            if (!isset($categories[$currentCategory])){
+    // Iterate over category directories
+    foreach (new DirectoryIterator($rootDirectory) as $categoryInfo) {
+        if ($categoryInfo->isDot() || strpos($categoryInfo->getBasename(), ".") === 0) {
+            continue;
+        }
+
+        if ($categoryInfo->isDir()) {
+            $currentCategory = $categoryInfo->getFilename();
+            
+            if (!isset($categories[$currentCategory])) {
                 $categories[$currentCategory] = [];
             }
-            
-            // Set up the template directories within each category
-            $templateDirectories = new DirectoryIterator($fileInfo->getPathname());
-            foreach ($templateDirectories as $templateFileInfo) {
-                if ($templateFileInfo->isDot() || strpos($templateFileInfo->getBasename(), '.') === 0 ) {continue;}
-                if ($templateFileInfo->isDir()) { 
-                    $templateName = $templateFileInfo->getFilename();
-                    
-                    $templateStructure = [
-                        "helper_process" => "",
-                        "template_process" => "",
-                        "config_collection" => "",
-                        "template_details" => [
-                            "name" => "",
-                            "card-excerpt" => "",
-                            "modal-excerpt" => "",
-                            "modal-description" => "",
-                        ],
-                        "assets" => [
-                            "icon" => "",
-                            "card-background" => "",
-                            "slides" => [],
-                        ],
-                        "connected_accounts" => []
-                    ];
-                    
-                    $categories[$currentCategory][$templateName] = $templateStructure;
-                    
 
+            // Iterate over template directories within each category
+            foreach (new DirectoryIterator($categoryInfo->getPathname()) as $templateInfo) {
+                if ($templateInfo->isDot() || strpos($templateInfo->getBasename(), ".") === 0) {
+                    continue;
+                }
 
-                    $templateContents = new DirectoryIterator($templateFileInfo->getPathname());
+                if ($templateInfo->isDir()) {
+                    $templateName = $templateInfo->getFilename();
+                    $categories[$currentCategory][$templateName] = initializeTemplateStructure();
 
-                    foreach ($templateContents as $fileContent) {
-                        if ($fileContent->isDot() || strpos($fileContent->getBasename(), '.') === 0 ) {continue;}
-                        // TODO: Handle 'Assets' directory
-                        if ($fileContent->isDir()) { continue;}
-
-                        // TODO: Handle files
-                        $fileName = $fileContent->getFilename();
-                        $fileName = substr($fileName, 0, strrpos($fileName, "."));
-                        // var_dump($fileName);
-                        
-                        if ($fileName === "process_helper_export") {
-                            $categories[$currentCategory][$templateName]['helper_process'] = $fileContent->getPathname();
-                        } elseif ($fileName === "process_template_export") {
-                            $categories[$currentCategory][$templateName]['template_process'] = $fileContent->getPathname();
-                        } elseif ($fileName === "configuration_collection_export") {
-                             $categories[$currentCategory][$templateName]['config_collection'] = $fileContent->getPathname();
+                    // Iterate over template contents
+                    foreach (new DirectoryIterator($templateInfo->getPathname()) as $contentInfo) {
+                        if ($contentInfo->isDot() || strpos($templateInfo->getBasename(), ".") === 0) {
+                            continue;
                         }
-                        
-                        // elseif ($filepath === "wizard-template-details") {
-                        //      $categories[$currentCategory][$templateName]->template_details->name = $data["name"];
-                        // }
 
-                        // die();
+                        handleTemplateContent($contentInfo, $categories, $currentCategory, $templateName);
                     }
                 }
-                // TODO: Map template data to template structure
-                
             }
         }
     }
-    
 
-
-
-    // $rii = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($root_dir));
-
-   
-    // foreach ($rii as $file) {
-
-    //     if ($file->isDir() ) continue;
-    //     if (pathinfo($file->getPathname(), PATHINFO_EXTENSION) != "json") continue;
-
-    //     $filepath = $file->getPathname();
-    //     $data = json_decode(file_get_contents($filepath), true);
-
-    //     $categoryPath = str_replace("./", "", $file->getPath());
-    //     $categorySegments = explode("/", $categoryPath);
-        
-    //     // Initialize the template array here
-    //     $template_info = [];
-    //     if (strpos($filepath, "process_helper_export") !== false) {
-    //         // ... your existing code to fill $template_info ...
-    //     }
-        
-    //     // Initialize the category structure with empty arrays and default values
-    //     $currentCategory = &$categories;
-    //     foreach ($categorySegments as $segment) {
-    //         if (!isset($currentCategory[$segment])) {
-    //             // var_dump($data["name"]);
-    //             // die();
-    //             $currentCategory[$segment] = [
-    //                 "helper_process" => $filepath,
-    //                 "template_process" => $filepath,
-    //                 "config_collection" => $filepath,
-    //                 "template_details" => [
-    //                     "name" => "",
-    //                     "card-excerpt" => "",
-    //                     "modal-excerpt" => "",
-    //                     "modal-description" => "",
-    //                 ],
-    //                 "assets" => [
-    //                     "icon" => "",
-    //                     "card-background" => "",
-    //                     "slides" => [],
-    //                 ],
-    //                 "connected_accounts" => []
-    //             ];
-    //         }
-    //         $currentCategory = &$currentCategory[$segment];
-    //     }
-
-    //     // Assign the file data to the correct key based on the filename
-    //     if (strpos($filepath, "process_helper_export") !== false) {
-    //         $currentCategory['helper_process'] = $template_info;
-    //     } elseif (strpos($filepath, "process_template_export") !== false) {
-    //         $currentCategory['template_process'] = $template_info;
-    //     } elseif (strpos($filepath, "configuration_collection_export") !== false) {
-    //         $currentCategory['config_collection'] = $template_info;
-    //     } elseif (strpos($filepath, "wizard-template-details") !== false) {
-    //         // Here, you would assign the values to 'template_details' key
-    //         // For example:
-    //         $currentCategory['template_details']['name'] = $data["name"];
-    //         // ... and so on for other sub-keys within 'template_details'
-    //     }
-    //     // Repeat the process for other file types and their respective keys
-    // }
-
-    // // Once the $categories array is built, you can output it as JSON
     file_put_contents("index.json", json_encode($categories, JSON_PRETTY_PRINT));
+}
 
-    // // update_readme function needs to be defined if you want to use it
-    // // update_readme($categories);
+function initializeTemplateStructure()
+{
+    return [
+        "helper_process" => "",
+        "template_process" => "",
+        "config_collection" => "",
+        "template_details" => [
+            "card-title" => "",
+            "card-excerpt" => "",
+            "modal-excerpt" => "",
+            "modal-description" => "",
+        ],
+        "assets" => [
+            "icon" => "",
+            "card-background" => "",
+            "slides" => [],
+        ],
+        "connected_accounts" => []
+    ];
+}
+
+function handleTemplateContent($contentInfo, &$categories, $currentCategory, $templateName)
+{
+    if ($contentInfo->isDir()) {
+        handleAssetDirectory($contentInfo, $categories, $currentCategory, $templateName);
+    } else {
+        mapContentToTemplateStructure($contentInfo, $categories, $currentCategory, $templateName);
+    }
+}
+
+function handleAssetDirectory($assetDirectory, &$categories, $currentCategory, $templateName)
+{
+    $assets = new DirectoryIterator($assetDirectory->getPathname());
+    
+    foreach ($assets as $assetFileInfo) {
+        if ($assetFileInfo->isDot() || strpos($assetFileInfo->getBasename(), '.') === 0) {
+            continue;
+        }
+
+        handleAssetFile($assetFileInfo, $categories, $currentCategory, $templateName);
+    }
+}
+
+function handleAssetFile($assetFileInfo, &$categories, $currentCategory, $templateName)
+{
+    $assetName = $assetFileInfo->getFilename();
+    $assetName = substr($assetName, 0, strrpos($assetName, "."));
+
+    if ($assetName === 'card-background') {
+        $categories[$currentCategory][$templateName]['assets']['card-background'] = $assetFileInfo->getPathname();
+    }
+
+    if ($assetName === 'icon') {
+        $categories[$currentCategory][$templateName]['assets']['icon'] = $assetFileInfo->getPathname();
+    }
+
+    if ($assetFileInfo->isDir()) {
+        handleSlidesDirectory($assetFileInfo, $categories, $currentCategory, $templateName);
+    }
+}
+
+function handleSlidesDirectory($slidesDirectory, &$categories, $currentCategory, $templateName)
+{
+    $slides = new DirectoryIterator($slidesDirectory->getPathname());
+
+    foreach ($slides as $slideInfo) {
+        if ($slides->isDot() || strpos($slides->getBasename(), '.') === 0) {
+            continue;
+        }
+
+        array_push($categories[$currentCategory][$templateName]['assets']['slides'], $slideInfo->getPathname());
+    }
+}
+
+function mapContentToTemplateStructure($contentInfo, &$categories, $currentCategory, $templateName)
+{
+    $fileName = $contentInfo->getFilename();
+    $fileName = substr($fileName, 0, strrpos($fileName, "."));
+
+    switch ($fileName) {
+        case "process_helper_export":
+            $categories[$currentCategory][$templateName]['helper_process'] = $contentInfo->getPathname();
+            break;
+        case "process_template_export":
+            $categories[$currentCategory][$templateName]['template_process'] = $contentInfo->getPathname();
+            break;
+        case "configuration_collection_export":
+            $categories[$currentCategory][$templateName]['config_collection'] = $contentInfo->getPathname();
+            break;
+        case "wizard-template-details":
+            loadXmlAttributes($contentInfo, $categories, $currentCategory, $templateName);
+            break;
+    }
+}
+
+function loadXmlAttributes($contentInfo, &$categories, $currentCategory, $templateName)
+{
+    $xml = simplexml_load_file($contentInfo->getPathname());
+
+    $cardTitle = (string) $xml->attributes()['card-title'];
+    $cardExcerpt = (string) $xml->attributes()['card-excerpt'];
+    $modelExcerpt = (string) $xml->attributes()['modal-excerpt'];
+    $modelDescription = (string) $xml->attributes()['modal-description'];
+
+    $categories[$currentCategory][$templateName]['template_details']['card-title'] = $cardTitle;
+    $categories[$currentCategory][$templateName]['template_details']['card-excerpt'] = $cardExcerpt;
+    $categories[$currentCategory][$templateName]['template_details']['modal-excerpt'] = $modelExcerpt;
+    $categories[$currentCategory][$templateName]['template_details']['modal-description'] = $modelDescription;
 }
 
 // You also need to define the compute_hash and update_readme functions if they are not already defined.
-
 
 function sort_categories(&$categories) {
     ksort($categories);
