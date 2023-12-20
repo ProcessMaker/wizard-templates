@@ -1,5 +1,48 @@
 {
-    "accounting-and-sales": [],
+    "accounting-and-sales": {
+        "sales-approval": {
+            "helper_process": ".\/accounting-and-sales\/sales-approval\/process_helper_export.json",
+            "template_process": ".\/accounting-and-sales\/sales-approval\/process_template_export.json",
+            "config_collection": ".\/accounting-and-sales\/sales-approval\/configuration_collection_export.json",
+            "template_details": {
+                "card-title": "Invoice Approval",
+                "card-excerpt": "Approve and Reject invoice using OCR",
+                "modal-excerpt": "Gather real-time data and approval on demand for invoices",
+                "modal-description": "Drive action and measure your impact with a continuous, real-time tracking of invoices"
+            },
+            "assets": {
+                "icon": ".\/accounting-and-sales\/sales-approval\/assets\/icon.png",
+                "card-background": ".\/accounting-and-sales\/sales-approval\/assets\/card-background.png",
+                "slides": [
+                    ".\/accounting-and-sales\/sales-approval\/assets\/slides\/slide3.png",
+                    ".\/accounting-and-sales\/sales-approval\/assets\/slides\/slide1.png",
+                    ".\/accounting-and-sales\/sales-approval\/assets\/slides\/slide2.png"
+                ]
+            },
+            "connected_accounts": []
+        },
+        "sales-pulse": {
+            "helper_process": ".\/accounting-and-sales\/sales-pulse\/process_helper_export.json",
+            "template_process": ".\/accounting-and-sales\/sales-pulse\/process_template_export.json",
+            "config_collection": ".\/accounting-and-sales\/sales-pulse\/configuration_collection_export.json",
+            "template_details": {
+                "card-title": "Invoice Approval",
+                "card-excerpt": "Approve and Reject invoice using OCR",
+                "modal-excerpt": "Gather real-time data and approval on demand for invoices",
+                "modal-description": "Drive action and measure your impact with a continuous, real-time tracking of invoices"
+            },
+            "assets": {
+                "icon": ".\/accounting-and-sales\/sales-pulse\/assets\/icon.png",
+                "card-background": ".\/accounting-and-sales\/sales-pulse\/assets\/card-background.png",
+                "slides": [
+                    ".\/accounting-and-sales\/sales-pulse\/assets\/slides\/slide3.png",
+                    ".\/accounting-and-sales\/sales-pulse\/assets\/slides\/slide1.png",
+                    ".\/accounting-and-sales\/sales-pulse\/assets\/slides\/slide2.png"
+                ]
+            },
+            "connected_accounts": []
+        }
+    },
     "accounting-and-finance": {
         "expense-approval": {
             "helper_process": ".\/accounting-and-finance\/expense-approval\/process_helper_export.json",
@@ -18,6 +61,27 @@
                     ".\/accounting-and-finance\/expense-approval\/assets\/slides\/slide3.png",
                     ".\/accounting-and-finance\/expense-approval\/assets\/slides\/slide1.png",
                     ".\/accounting-and-finance\/expense-approval\/assets\/slides\/slide2.png"
+                ]
+            },
+            "connected_accounts": []
+        },
+        "pulse": {
+            "helper_process": ".\/accounting-and-finance\/pulse\/process_helper_export.json",
+            "template_process": ".\/accounting-and-finance\/pulse\/process_template_export.json",
+            "config_collection": ".\/accounting-and-finance\/pulse\/configuration_collection_export.json",
+            "template_details": {
+                "card-title": "Invoice Approval",
+                "card-excerpt": "Approve and Reject invoice using OCR",
+                "modal-excerpt": "Gather real-time data and approval on demand for invoices",
+                "modal-description": "Drive action and measure your impact with a continuous, real-time tracking of invoices"
+            },
+            "assets": {
+                "icon": ".\/accounting-and-finance\/pulse\/assets\/icon.png",
+                "card-background": ".\/accounting-and-finance\/pulse\/assets\/card-background.png",
+                "slides": [
+                    ".\/accounting-and-finance\/pulse\/assets\/slides\/slide3.png",
+                    ".\/accounting-and-finance\/pulse\/assets\/slides\/slide1.png",
+                    ".\/accounting-and-finance\/pulse\/assets\/slides\/slide2.png"
                 ]
             },
             "connected_accounts": []
