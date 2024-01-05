@@ -5,7 +5,7 @@
             "template_process": ".\/accounting-and-sales\/sales-approval\/process_template_export.json",
             "config_collection": "",
             "template_details": {
-                "card-title": "Invoice Approval",
+                "card-title": "Sales Approval",
                 "card-excerpt": "Approve and Reject invoice using OCR",
                 "modal-excerpt": "Gather real-time data and approval on demand for invoices",
                 "modal-description": "Drive action and measure your impact with a continuous, real-time tracking of invoices"
@@ -26,7 +26,7 @@
             "template_process": ".\/accounting-and-sales\/sales-pulse\/process_template_export.json",
             "config_collection": "",
             "template_details": {
-                "card-title": "Invoice Approval",
+                "card-title": "Sales Pulse",
                 "card-excerpt": "Approve and Reject invoice using OCR",
                 "modal-excerpt": "Gather real-time data and approval on demand for invoices",
                 "modal-description": "Drive action and measure your impact with a continuous, real-time tracking of invoices"
@@ -49,7 +49,7 @@
             "template_process": ".\/accounting-and-finance\/invoice-approval\/process_template_export.json",
             "config_collection": "",
             "template_details": {
-                "card-title": "Invoice Approval 2",
+                "card-title": "Invoice Approval",
                 "card-excerpt": "Approve and Reject invoice using OCR",
                 "modal-excerpt": "Gather real-time data and approval on demand for invoices",
                 "modal-description": "Drive action and measure your impact with a continuous, real-time tracking of invoices"
@@ -70,7 +70,7 @@
             "template_process": ".\/accounting-and-finance\/expense-approval\/process_template_export.json",
             "config_collection": ".\/accounting-and-finance\/expense-approval\/configuration_collection_export.json",
             "template_details": {
-                "card-title": "Invoice Approval",
+                "card-title": "Expense Approval",
                 "card-excerpt": "Approve and Reject invoice using OCR",
                 "modal-excerpt": "Gather real-time data and approval on demand for invoices",
                 "modal-description": "Drive action and measure your impact with a continuous, real-time tracking of invoices"
@@ -91,7 +91,7 @@
             "template_process": ".\/accounting-and-finance\/pulse\/process_template_export.json",
             "config_collection": ".\/accounting-and-finance\/pulse\/configuration_collection_export.json",
             "template_details": {
-                "card-title": "Invoice Approval",
+                "card-title": "Pulse",
                 "card-excerpt": "Approve and Reject invoice using OCR",
                 "modal-excerpt": "Gather real-time data and approval on demand for invoices",
                 "modal-description": "Drive action and measure your impact with a continuous, real-time tracking of invoices"
