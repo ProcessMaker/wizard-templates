@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <wizard-template
-  card-title="Invoice Approval"
+  card-title="Sales Approval"
   card-excerpt="Approve and Reject invoice using OCR"
   modal-excerpt="Gather real-time data and approval on demand for invoices"
   modal-description="Drive action and measure your impact with a continuous, real-time tracking of invoices"
