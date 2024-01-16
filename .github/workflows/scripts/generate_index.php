@@ -88,6 +88,8 @@ function initializeTemplateStructure()
             "card-excerpt" => "",
             "modal-excerpt" => "",
             "modal-description" => "",
+            'version' => "",
+            'unique-template-id' => "",
         ],
         "assets" => [
             "icon" => "",
