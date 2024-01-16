@@ -165,9 +165,6 @@ function mapContentToTemplateStructure($contentInfo, &$categories, $currentCateg
         case "process_template_export":
             $categories[$currentCategory][$templateName]['template_process'] = $contentInfo->getPathname();
             break;
-        case "configuration_collection_export":
-            $categories[$currentCategory][$templateName]['config_collection'] = $contentInfo->getPathname();
-            break;
         case "wizard-template-details":
             loadXmlAttributes($contentInfo, $categories, $currentCategory, $templateName);
             break;
@@ -182,11 +179,15 @@ function loadXmlAttributes($contentInfo, &$categories, $currentCategory, $templa
     $cardExcerpt = (string) $xml->attributes()['card-excerpt'];
     $modelExcerpt = (string) $xml->attributes()['modal-excerpt'];
     $modelDescription = (string) $xml->attributes()['modal-description'];
+    $version = (string) $xml->attributes()['version'];
+    $uniqueTemplateId = (string) $xml->attributes()['unique-template-id'];
 
     $categories[$currentCategory][$templateName]['template_details']['card-title'] = $cardTitle;
     $categories[$currentCategory][$templateName]['template_details']['card-excerpt'] = $cardExcerpt;
     $categories[$currentCategory][$templateName]['template_details']['modal-excerpt'] = $modelExcerpt;
     $categories[$currentCategory][$templateName]['template_details']['modal-description'] = $modelDescription;
+    $categories[$currentCategory][$templateName]['template_details']['version'] = $version;
+    $categories[$currentCategory][$templateName]['template_details']['unique-template-id'] = $uniqueTemplateId;
 }
 
 // You also need to define the compute_hash and update_readme functions if they are not already defined.
