@@ -16,9 +16,10 @@
                 "icon": ".\/accounting-and-finance\/invoice_approval\/assets\/icon.png",
                 "card-background": ".\/accounting-and-finance\/invoice_approval\/assets\/card-background.png",
                 "slides": [
-                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide3.png",
-                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide1.png",
-                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide2.png"
+                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/carrousel 2.png",
+                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/carrousel 1.png",
+                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/carrousel 4.png",
+                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/carrousel 3.png"
                 ]
             },
             "connected_accounts": []
