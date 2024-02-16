@@ -16,11 +16,21 @@
                 "icon": ".\/accounting-and-finance\/invoice_approval\/assets\/icon.png",
                 "card-background": ".\/accounting-and-finance\/invoice_approval\/assets\/card-background.png",
                 "slides": [
-                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide3.png",
-                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide1.png",
                     ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide2.png",
-                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide4.png"
-                ]
+                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide3.png",
+                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide4.png",
+                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide1.png"
+                ],
+                "launchpad": {
+                    "process-card-background": "",
+                    "slides": [
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/slide2.png",
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/slide3.png",
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/slide4.png",
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/slide1.png"
+                    ],
+                    "0": ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/process-card-background.png"
+                }
             },
             "connected_accounts": []
         }
