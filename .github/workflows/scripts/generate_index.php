@@ -35,6 +35,7 @@ function update_readme($categories) {
 
 function main()
 {
+    
     $rootDirectory = ".";
     $categories = [];
 
@@ -95,6 +96,10 @@ function initializeTemplateStructure()
             "icon" => "",
             "card-background" => "",
             "slides" => [],
+            "launchpad"  => [
+                "process-card-background" => "",
+                "slides" => [],
+            ]
         ],
         "connected_accounts" => []
     ];
@@ -136,20 +141,31 @@ function handleAssetFile($assetFileInfo, &$categories, $currentCategory, $templa
     }
 
     if ($assetFileInfo->isDir()) {
-        handleSlidesDirectory($assetFileInfo, $categories, $currentCategory, $templateName);
+        handleDirectory($assetFileInfo, $categories, $currentCategory, $templateName);
     }
 }
 
-function handleSlidesDirectory($slidesDirectory, &$categories, $currentCategory, $templateName)
+function handleDirectory($directory, &$categories, $currentCategory, $templateName)
 {
-    $slides = new DirectoryIterator($slidesDirectory->getPathname());
-
-    foreach ($slides as $slideInfo) {
-        if ($slides->isDot() || strpos($slides->getBasename(), '.') === 0) {
+    $path = explode('/', $directory->getPathname());
+    $directoryName = end($path);
+    $parentName = prev($path);
+    
+    foreach (new DirectoryIterator($directory->getPathname()) as $fileInfo) {
+        if ($fileInfo->isDot() || strpos($fileInfo->getBasename(), '.') === 0) {
             continue;
         }
-
-        array_push($categories[$currentCategory][$templateName]['assets']['slides'], $slideInfo->getPathname());
+        
+        if ($fileInfo->isDir()) {
+            handleDirectory($fileInfo, $categories, $currentCategory, $templateName);
+        } else {
+            var_dump($categories, $currentCategory, $templateName, $parentName, $directoryName);
+            if ($parentName === 'assets') {
+                array_push($categories[$currentCategory][$templateName][$parentName][$directoryName], $fileInfo->getPathname());
+            } else {
+                array_push($categories[$currentCategory][$templateName]['assets'][$parentName][$directoryName], $fileInfo->getPathname());
+            }
+        }
     }
 }
 
