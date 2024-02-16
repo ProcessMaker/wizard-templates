@@ -141,31 +141,42 @@ function handleAssetFile($assetFileInfo, &$categories, $currentCategory, $templa
     }
 
     if ($assetFileInfo->isDir()) {
-        handleDirectory($assetFileInfo, $categories, $currentCategory, $templateName);
+        handleSubDirectoryAssets($assetFileInfo, $categories, $currentCategory, $templateName);
     }
 }
 
-function handleDirectory($directory, &$categories, $currentCategory, $templateName)
+function handleSubDirectoryAssets($directory, &$categories, $currentCategory, $templateName)
 {
     $path = explode('/', $directory->getPathname());
     $directoryName = end($path);
     $parentName = prev($path);
-    
+
     foreach (new DirectoryIterator($directory->getPathname()) as $fileInfo) {
         if ($fileInfo->isDot() || strpos($fileInfo->getBasename(), '.') === 0) {
             continue;
         }
         
         if ($fileInfo->isDir()) {
-            handleDirectory($fileInfo, $categories, $currentCategory, $templateName);
+            handleSubDirectoryAssets($fileInfo, $categories, $currentCategory, $templateName);
         } else {
-            var_dump($categories, $currentCategory, $templateName, $parentName, $directoryName);
-            if ($parentName === 'assets') {
-                array_push($categories[$currentCategory][$templateName][$parentName][$directoryName], $fileInfo->getPathname());
-            } else {
-                array_push($categories[$currentCategory][$templateName]['assets'][$parentName][$directoryName], $fileInfo->getPathname());
-            }
+            handleAssetSubDirectoryFile($fileInfo, $categories, $currentCategory, $templateName, $parentName, $directoryName);
         }
+    }
+}
+
+function handleAssetSubDirectoryFile($fileInfo, &$categories, $currentCategory, $templateName, $parentName, $directoryName)
+{
+    $assetName = $fileInfo->getFilename();
+    $assetName = substr($assetName, 0, strrpos($assetName, "."));
+
+    if ($parentName === 'assets') {
+        if ($assetName === 'process-card-background') {
+            $categories[$currentCategory][$templateName]['assets']['launchpad']['process-card-background'] = $fileInfo->getPathname();
+        } else {
+            array_push($categories[$currentCategory][$templateName][$parentName][$directoryName], $fileInfo->getPathname());
+        }
+    } else {
+        array_push($categories[$currentCategory][$templateName]['assets'][$parentName][$directoryName], $fileInfo->getPathname());
     }
 }
 
