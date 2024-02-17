@@ -24,9 +24,9 @@
                 "launchpad": {
                     "process-card-background": "",
                     "slides": [
-                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/slide2.png",
-                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/slide3.png",
-                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/slide4.png",
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/slide4.jpg",
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/slide2.jpg",
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/slide3.jpg",
                         ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/slide1.png"
                     ]
                 }
