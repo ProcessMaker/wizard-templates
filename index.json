@@ -20,7 +20,15 @@
                     ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide3.png",
                     ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide4.png",
                     ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide1.png"
-                ]
+                ],
+                "launchpad": {
+                    "process-card-background": "",
+                    "slides": [
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.jpg",
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide3.jpg",
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide2.jpg"
+                    ]
+                }
             },
             "connected_accounts": []
         }
