@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<wizard-template>
+	<card-title>Expense Report</card-title>
+	<card-excerpt>Approve and Reject expense reports using OCR</card-excerpt>
+	<modal-excerpt>
+	   		 Gather real-time data and approval expenses
+    </modal-excerpt>
+	<unique-template-id>
+			expense_report
+	</unique-template-idt>
+	<modal-description>
+			 Drive action and measure your impact with a better pharse than the previous one
+</wizard-template>
