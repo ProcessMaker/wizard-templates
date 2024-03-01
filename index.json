@@ -31,6 +31,34 @@
                 }
             },
             "connected_accounts": []
+        },
+        "expense_report": {
+            "helper_process": ".\/accounting-and-finance\/expense_report\/process_helper_export.json",
+            "template_process": ".\/accounting-and-finance\/expense_report\/process_template_export.json",
+            "config_collection": "",
+            "template_details": {
+                "card-title": "Expense Report",
+                "card-excerpt": "Approve and Reject expenses using OCR",
+                "modal-excerpt": "Gather real-time data and approval on demand for expenses",
+                "modal-description": "Empower proactive decision-making using this template.",
+                "version": "1.0.0",
+                "unique-template-id": "expense_report"
+            },
+            "assets": {
+                "icon": ".\/accounting-and-finance\/expense_report\/assets\/icon.png",
+                "card-background": ".\/accounting-and-finance\/expense_report\/assets\/card-background.png",
+                "slides": [
+                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide2.png",
+                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide1.jpg"
+                ],
+                "launchpad": {
+                    "process-card-background": "",
+                    "slides": [
+                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide1.jpg"
+                    ]
+                }
+            },
+            "connected_accounts": []
         }
     }
 }
