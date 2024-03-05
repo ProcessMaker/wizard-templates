@@ -16,16 +16,16 @@
                 "icon": ".\/accounting-and-finance\/invoice_approval\/assets\/icon.png",
                 "card-background": ".\/accounting-and-finance\/invoice_approval\/assets\/card-background.png",
                 "slides": [
-                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide2.png",
                     ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide3.png",
-                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide4.png",
-                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide1.png"
+                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide2.png",
+                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide1.png",
+                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide4.png"
                 ],
                 "launchpad": {
                     "process-card-background": "",
                     "slides": [
-                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.jpg",
                         ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide3.jpg",
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.jpg",
                         ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide2.jpg"
                     ]
                 }
@@ -48,8 +48,8 @@
                 "icon": ".\/accounting-and-finance\/expense_report\/assets\/icon.png",
                 "card-background": ".\/accounting-and-finance\/expense_report\/assets\/card-background.png",
                 "slides": [
-                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide2.png",
-                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide1.jpg"
+                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide1.jpg",
+                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide2.png"
                 ],
                 "launchpad": {
                     "process-card-background": "",
