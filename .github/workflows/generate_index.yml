@@ -35,6 +35,7 @@ jobs:
       
     - name: Commit and push if it changed
       run: | 
+        git diff
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git commit -am "Update index.json and README.md" || exit 0
