@@ -9,7 +9,7 @@
                 "card-excerpt": "Approve and Reject invoice using OCR",
                 "modal-excerpt": "Gather real-time data and approval on demand for invoices",
                 "modal-description": "Drive action and measure your impact with a continuous, real-time tracking of invoices",
-                "version": "1.0.0",
+                "version": "1.0.0 ",
                 "unique-template-id": "invoice_approval"
             },
             "assets": {
@@ -24,9 +24,9 @@
                 "launchpad": {
                     "process-card-background": "",
                     "slides": [
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide3.jpg",
                         ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.jpg",
-                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide2.jpg",
-                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide3.jpg"
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide2.jpg"
                     ]
                 }
             },
@@ -48,8 +48,8 @@
                 "icon": ".\/accounting-and-finance\/expense_report\/assets\/icon.png",
                 "card-background": ".\/accounting-and-finance\/expense_report\/assets\/card-background.png",
                 "slides": [
-                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide2.png",
-                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide1.jpg"
+                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide1.jpg",
+                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide2.png"
                 ],
                 "launchpad": {
                     "process-card-background": "",
