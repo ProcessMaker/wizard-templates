@@ -41,7 +41,7 @@
                 "card-excerpt": "Approve and Reject expenses using OCR",
                 "modal-excerpt": "Gather real-time data and approval on demand for expenses",
                 "modal-description": "Empower proactive decision-making using this template.",
-                "version": "1.0.0",
+                "version": "1.0.0 ",
                 "unique-template-id": "expense_report"
             },
             "assets": {
