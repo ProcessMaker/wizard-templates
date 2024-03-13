@@ -5,5 +5,5 @@
   modal-excerpt="Gather real-time data and approval on demand for expenses"
   modal-description="Empower proactive decision-making using this template."
   unique-template-id="expense_report"
-  version="1.0.8 " 
+  version="1.0.9 " 
 ></wizard-template>
