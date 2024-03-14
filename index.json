@@ -16,17 +16,17 @@
                 "icon": ".\/accounting-and-finance\/invoice_approval\/assets\/icon.png",
                 "card-background": ".\/accounting-and-finance\/invoice_approval\/assets\/card-background.png",
                 "slides": [
-                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide3.png",
                     ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide2.png",
                     ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide1.png",
+                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide3.png",
                     ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide4.png"
                 ],
                 "launchpad": {
                     "process-card-background": "",
                     "slides": [
-                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide3.jpg",
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide2.jpg",
                         ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.jpg",
-                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide2.jpg"
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide3.jpg"
                     ]
                 }
             },
@@ -41,15 +41,15 @@
                 "card-excerpt": "Approve and Reject expenses using OCR",
                 "modal-excerpt": "Gather real-time data and approval on demand for expenses",
                 "modal-description": "Empower proactive decision-making using this template.",
-                "version": "1.0.9 ",
+                "version": "1.1.1 ",
                 "unique-template-id": "expense_report"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/expense_report\/assets\/icon.png",
                 "card-background": ".\/accounting-and-finance\/expense_report\/assets\/card-background.png",
                 "slides": [
-                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide1.jpg",
-                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide2.png"
+                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide2.png",
+                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide1.jpg"
                 ],
                 "launchpad": {
                     "process-card-background": "",
