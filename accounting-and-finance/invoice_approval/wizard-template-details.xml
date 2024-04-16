@@ -5,5 +5,5 @@
   modal-excerpt="Gather real-time data and approval on demand for invoices"
   modal-description="Drive action and measure your impact with a continuous, real-time tracking of invoices"
   unique-template-id="invoice_approval"
-  version="1.0.0"
+  version="2.1.13"
 ></wizard-template>
