@@ -38,7 +38,7 @@
                 "card-excerpt": "Approve and Reject invoice using OCR",
                 "modal-excerpt": "Gather real-time data and approval on demand for invoices",
                 "modal-description": "Drive action and measure your impact with a continuous, real-time tracking of invoices",
-                "version": "2.1.13",
+                "version": "2.1.14",
                 "unique-template-id": "invoice_approval"
             },
             "assets": {
@@ -55,6 +55,7 @@
                     "slides": [
                         ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide3.jpg",
                         ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide2.jpg",
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide4.jpg",
                         ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.jpg"
                     ]
                 }
