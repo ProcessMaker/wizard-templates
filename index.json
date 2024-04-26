@@ -9,16 +9,16 @@
                 "card-excerpt": "Approve and Reject Expenses with OCR",
                 "modal-excerpt": "Access Real-Time Data and On-Demand Approval for Expenses",
                 "modal-description": "Improve Expense Oversight with Efficient Data Management",
-                "version": "2.0.2 ",
+                "version": "2.0.3 ",
                 "unique-template-id": "expense_report"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/expense_report\/assets\/icon.png",
                 "card-background": ".\/accounting-and-finance\/expense_report\/assets\/card-background.png",
                 "slides": [
-                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide2.png",
-                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide3.png",
-                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide1.png"
+                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide3.jpg",
+                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide2.jpg",
+                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide1.jpg"
                 ],
                 "launchpad": {
                     "process-card-background": "",
