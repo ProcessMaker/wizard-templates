@@ -9,7 +9,7 @@
                 "card-excerpt": "Approve and Reject Expenses with OCR",
                 "modal-excerpt": "Access Real-Time Data and On-Demand Approval for Expenses",
                 "modal-description": "Improve Expense Oversight with Efficient Data Management",
-                "version": "2.0.4 ",
+                "version": "2.0.5 ",
                 "unique-template-id": "expense_report"
             },
             "assets": {
