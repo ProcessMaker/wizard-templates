@@ -5,5 +5,5 @@
   modal-excerpt="Access Real-Time Data and On-Demand Approval for Expenses"
   modal-description="Improve Expense Oversight with Efficient Data Management"
   unique-template-id="expense_report"
-  version="2.0.4 " 
+  version="2.0.5 " 
 ></wizard-template>
