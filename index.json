@@ -1,9 +1,7 @@
 {
     "accounting-and-finance": {
         "expense_report": {
-            "helper_process_hash": "84fe0234ac04ba1747a5e4d94e88429b61c472d4",
             "helper_process": ".\/accounting-and-finance\/expense_report\/process_helper_export.json",
-            "template_process_hash": "9127188deb597df15107ab380e1cd222299e61dc",
             "template_process": ".\/accounting-and-finance\/expense_report\/process_template_export.json",
             "config_collection": "",
             "template_details": {
@@ -12,7 +10,9 @@
                 "modal-excerpt": "Access Real-Time Data and On-Demand Approval for Expenses",
                 "modal-description": "Improve Expense Oversight with Efficient Data Management",
                 "version": "2.1.1 ",
-                "unique-template-id": "expense_report"
+                "unique-template-id": "expense_report",
+                "helper_process_hash": "84fe0234ac04ba1747a5e4d94e88429b61c472d4",
+                "template_process_hash": "9127188deb597df15107ab380e1cd222299e61dc"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/expense_report\/assets\/icon.png",
@@ -35,9 +35,7 @@
             "connected_accounts": []
         },
         "invoice_approval": {
-            "helper_process_hash": "a9ddb4f9656e3634df0cd718b1d1f2ab8143b028",
             "helper_process": ".\/accounting-and-finance\/invoice_approval\/process_helper_export.json",
-            "template_process_hash": "d66789e831d0564a2dbee235949a9f1b67716a46",
             "template_process": ".\/accounting-and-finance\/invoice_approval\/process_template_export.json",
             "config_collection": "",
             "template_details": {
@@ -46,7 +44,9 @@
                 "modal-excerpt": "Gather real-time data and approval on demand for invoices",
                 "modal-description": "Drive action and measure your impact with a continuous, real-time tracking of invoices",
                 "version": "2.1.14",
-                "unique-template-id": "invoice_approval"
+                "unique-template-id": "invoice_approval",
+                "helper_process_hash": "a9ddb4f9656e3634df0cd718b1d1f2ab8143b028",
+                "template_process_hash": "d66789e831d0564a2dbee235949a9f1b67716a46"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/invoice_approval\/assets\/icon.png",
