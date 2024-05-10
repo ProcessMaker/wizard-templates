@@ -81,9 +81,7 @@ function main()
 function initializeTemplateStructure()
 {
     return [
-        "helper_process_hash" => "",
         "helper_process" => "",
-        "template_process_hash" => "",
         "template_process" => "",
         "config_collection" => "",
         "template_details" => [
@@ -93,6 +91,8 @@ function initializeTemplateStructure()
             "modal-description" => "",
             'version' => "",
             'unique-template-id' => "",
+            "helper_process_hash" => "",
+            "template_process_hash" => "",
         ],
         "assets" => [
             "icon" => "",
@@ -190,12 +190,12 @@ function mapContentToTemplateStructure($contentInfo, &$categories, $currentCateg
     switch ($fileName) {
         case "process_helper_export":
             $data = json_decode(file_get_contents($contentInfo->getPathname()), true);
-            $categories[$currentCategory][$templateName]['helper_process_hash'] = compute_hash(json_encode($data['export'][$data['root']]['attributes']));
+            $categories[$currentCategory][$templateName]['template_details']['helper_process_hash'] = compute_hash(json_encode($data['export'][$data['root']]['attributes']));
             $categories[$currentCategory][$templateName]['helper_process'] = $contentInfo->getPathname();
             break;
         case "process_template_export":
             $data = json_decode(file_get_contents($contentInfo->getPathname()), true);
-            $categories[$currentCategory][$templateName]['template_process_hash'] = compute_hash(json_encode($data['export'][$data['root']]['attributes']));
+            $categories[$currentCategory][$templateName]['template_details']['template_process_hash'] = compute_hash(json_encode($data['export'][$data['root']]['attributes']));
             $categories[$currentCategory][$templateName]['template_process'] = $contentInfo->getPathname();
             break;
         case "wizard-template-details":
