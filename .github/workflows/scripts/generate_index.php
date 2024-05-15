@@ -15,12 +15,20 @@ function update_readme($categories) {
         $category = ucwords($category);
         fwrite($readme, "\n## $category\n");
         // Sort templates alphabetically within each category
-        usort($templates, function($a, $b) { return strcmp($a['template_details']['card-title'], $b['template_details']['card-title']); });
+        usort($templates, function($a, $b) {
+            $aTitle = isset($a['template_details']['card-title']) ? $a['template_details']['card-title'] : '';
+            $bTitle = isset($b['template_details']['card-title']) ? $b['template_details']['card-title'] : '';
+            return strcmp($aTitle, $bTitle);
+        });
         
         foreach ($templates as $template) {
-            $string = "- **[{$template['template_details']['card-title']}]**: {$template['template_details']['modal-description']}";
-            if ($template['template_details']['version']) {
-                $string .= " (Version {$template['template_details']['version']})\n";
+            $string = "- **[";
+            $title = isset($template['template_details']['card-title']) ? $template['template_details']['card-title'] : '';
+            $desc = isset($template['template_details']['modal-description']) ? $template['template_details']['modal-description'] : '';
+            $version = isset($template['template_details']['version']) ? $template['template_details']['version'] : '';
+            $string .= "{$title}]**: {$desc}";
+            if ($version) {
+                $string .= " (Version {$version})\n";
             } else {
                 $string .= "\n";
             }
@@ -190,12 +198,16 @@ function mapContentToTemplateStructure($contentInfo, &$categories, $currentCateg
     switch ($fileName) {
         case "process_helper_export":
             $data = json_decode(file_get_contents($contentInfo->getPathname()), true);
-            $categories[$currentCategory][$templateName]['template_details']['helper_process_hash'] = compute_hash(json_encode($data['export'][$data['root']]['attributes']));
+            if (isset($data['export'][$data['root']]['attributes'])) {
+                $categories[$currentCategory][$templateName]['template_details']['helper_process_hash'] = compute_hash(json_encode($data['export'][$data['root']]['attributes']));
+            }
             $categories[$currentCategory][$templateName]['helper_process'] = $contentInfo->getPathname();
             break;
         case "process_template_export":
             $data = json_decode(file_get_contents($contentInfo->getPathname()), true);
-            $categories[$currentCategory][$templateName]['template_details']['template_process_hash'] = compute_hash(json_encode($data['export'][$data['root']]['attributes']));
+            if (isset($data['export'][$data['root']]['attributes'])) {
+                $categories[$currentCategory][$templateName]['template_details']['template_process_hash'] = compute_hash(json_encode($data['export'][$data['root']]['attributes']));
+            }
             $categories[$currentCategory][$templateName]['template_process'] = $contentInfo->getPathname();
             break;
         case "wizard-template-details":
