@@ -9,7 +9,7 @@
                 "card-excerpt": "Approve and Reject Expenses with OCR",
                 "modal-excerpt": "Access Real-Time Data and On-Demand Approval for Expenses",
                 "modal-description": "Improve Expense Oversight with Efficient Data Management",
-                "version": "2.1.2",
+                "version": "2.1.3",
                 "unique-template-id": "expense_report"
             },
             "assets": {
@@ -23,10 +23,10 @@
                 "launchpad": {
                     "process-card-background": "",
                     "slides": [
+                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide1.jpg",
                         ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide3.jpg",
-                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide2.jpg",
                         ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide4.jpg",
-                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide1.jpg"
+                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide2.jpg"
                     ]
                 }
             },
@@ -48,18 +48,18 @@
                 "icon": ".\/accounting-and-finance\/invoice_approval\/assets\/icon.png",
                 "card-background": ".\/accounting-and-finance\/invoice_approval\/assets\/card-background.png",
                 "slides": [
-                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide2.png",
-                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide3.png",
                     ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide4.png",
-                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide1.png"
+                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide3.png",
+                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide1.png",
+                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide2.png"
                 ],
                 "launchpad": {
                     "process-card-background": "",
                     "slides": [
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.jpg",
                         ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide3.jpg",
-                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide2.jpg",
                         ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide4.jpg",
-                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.jpg"
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide2.jpg"
                     ]
                 }
             },
