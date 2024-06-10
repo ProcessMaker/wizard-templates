@@ -15,19 +15,24 @@ function update_readme($categories) {
         $category = ucwords($category);
         fwrite($readme, "\n## $category\n");
         // Sort templates alphabetically within each category
-        usort($templates, function($a, $b) { return strcmp($a['name'], $b['name']); });
+        usort($templates, function($a, $b) {
+            $aTitle = isset($a['template_details']['card-title']) ? $a['template_details']['card-title'] : '';
+            $bTitle = isset($b['template_details']['card-title']) ? $b['template_details']['card-title'] : '';
+            return strcmp($aTitle, $bTitle);
+        });
         
         foreach ($templates as $template) {
-            foreach ($template as $value) {
-                $string = "- **[{$value['name']}](/{$value['relative_path']})**: {$value['description']}";
-                if ($value['version']) {
-                    $string .= " (Version {$value['version']})\n";
-                } else {
-                    $string .= "\n";
-                }
-                fwrite($readme, $string);
+            $string = "- **[";
+            $title = isset($template['template_details']['card-title']) ? $template['template_details']['card-title'] : '';
+            $desc = isset($template['template_details']['modal-description']) ? $template['template_details']['modal-description'] : '';
+            $version = isset($template['template_details']['version']) ? $template['template_details']['version'] : '';
+            $string .= "{$title}]**: {$desc}";
+            if ($version) {
+                $string .= " (Version {$version})\n";
+            } else {
+                $string .= "\n";
             }
-
+            fwrite($readme, $string);
         }
     }
     fclose($readme);
@@ -75,7 +80,10 @@ function main()
         }
     }
 
+    ksort($categories);
     file_put_contents("index.json", json_encode($categories, JSON_PRETTY_PRINT));
+
+    update_readme($categories);
 }
 
 function initializeTemplateStructure()
@@ -91,6 +99,8 @@ function initializeTemplateStructure()
             "modal-description" => "",
             'version' => "",
             'unique-template-id' => "",
+            "helper_process_hash" => "",
+            "template_process_hash" => "",
         ],
         "assets" => [
             "icon" => "",
@@ -187,9 +197,17 @@ function mapContentToTemplateStructure($contentInfo, &$categories, $currentCateg
 
     switch ($fileName) {
         case "process_helper_export":
+            $data = json_decode(file_get_contents($contentInfo->getPathname()), true);
+            if (isset($data['export'][$data['root']]['attributes'])) {
+                $categories[$currentCategory][$templateName]['template_details']['helper_process_hash'] = compute_hash(json_encode($data['export'][$data['root']]['attributes']));
+            }
             $categories[$currentCategory][$templateName]['helper_process'] = $contentInfo->getPathname();
             break;
         case "process_template_export":
+            $data = json_decode(file_get_contents($contentInfo->getPathname()), true);
+            if (isset($data['export'][$data['root']]['attributes'])) {
+                $categories[$currentCategory][$templateName]['template_details']['template_process_hash'] = compute_hash(json_encode($data['export'][$data['root']]['attributes']));
+            }
             $categories[$currentCategory][$templateName]['template_process'] = $contentInfo->getPathname();
             break;
         case "wizard-template-details":
