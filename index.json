@@ -9,10 +9,8 @@
                 "card-excerpt": "Approve and Reject Expenses with OCR",
                 "modal-excerpt": "Access Real-Time Data and On-Demand Approval for Expenses",
                 "modal-description": "Improve Expense Oversight with Efficient Data Management",
-                "version": "2.1.2",
-                "unique-template-id": "expense_report",
-                "helper_process_hash": "84fe0234ac04ba1747a5e4d94e88429b61c472d4",
-                "template_process_hash": "d2c656028e99a8dc533971cf640e7fbad4b6722f"
+                "version": "2.2.2",
+                "unique-template-id": "expense_report"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/expense_report\/assets\/icon.png",
@@ -43,10 +41,8 @@
                 "card-excerpt": "Approve and Reject invoice using OCR",
                 "modal-excerpt": "Gather real-time data and approval on demand for invoices",
                 "modal-description": "Drive action and measure your impact with a continuous, real-time tracking of invoices",
-                "version": "2.1.14",
-                "unique-template-id": "invoice_approval",
-                "helper_process_hash": "a9ddb4f9656e3634df0cd718b1d1f2ab8143b028",
-                "template_process_hash": "d66789e831d0564a2dbee235949a9f1b67716a46"
+                "version": "2.2.0",
+                "unique-template-id": "invoice_approval"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/invoice_approval\/assets\/icon.png",
