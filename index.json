@@ -10,7 +10,9 @@
                 "modal-excerpt": "Access Real-Time Data and On-Demand Approval for Expenses",
                 "modal-description": "Improve Expense Oversight with Efficient Data Management",
                 "version": "2.2.2",
-                "unique-template-id": "expense_report"
+                "unique-template-id": "expense_report",
+                "helper_process_hash": "52330ffaf17a021f67e3b96d266121ae6b4d4524",
+                "template_process_hash": "695401a8afb24d1d9e173ee3db9e944970d4f629"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/expense_report\/assets\/icon.png",
@@ -42,7 +44,9 @@
                 "modal-excerpt": "Gather real-time data and approval on demand for invoices",
                 "modal-description": "Drive action and measure your impact with a continuous, real-time tracking of invoices",
                 "version": "2.2.0",
-                "unique-template-id": "invoice_approval"
+                "unique-template-id": "invoice_approval",
+                "helper_process_hash": "a9ddb4f9656e3634df0cd718b1d1f2ab8143b028",
+                "template_process_hash": "e69da5090ec63170f1564188fd2940659f2a1b45"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/invoice_approval\/assets\/icon.png",
