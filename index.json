@@ -1,5 +1,34 @@
 {
     "accounting-and-finance": {
+        "nonpo_invoice_approval": {
+            "helper_process": ".\/accounting-and-finance\/nonpo_invoice_approval\/process_helper_export.json",
+            "template_process": ".\/accounting-and-finance\/nonpo_invoice_approval\/process_template_export.json",
+            "config_collection": "",
+            "template_details": {
+                "card-title": "Non-PO Invoice Approval",
+                "card-excerpt": "Complete AP Approval process for invoice documents not related to a purchase order",
+                "modal-excerpt": "Gather real-time data and approval on demand for invoices",
+                "modal-description": "Drive action and measure your impact with a continuous, real-time tracking of invoices",
+                "version": "1.1.1",
+                "unique-template-id": "nonpo_invoice_approval",
+                "helper_process_hash": "9277145145aa7955818d2ff6069bb18b6151074a",
+                "template_process_hash": "e76c11e49184bb903e2126360c2d011a82c9fa44"
+            },
+            "assets": {
+                "icon": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/icon.png",
+                "card-background": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/card-background.png",
+                "slides": [
+                    ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/slides\/slide1.png"
+                ],
+                "launchpad": {
+                    "process-card-background": "",
+                    "slides": [
+                        ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.jpg"
+                    ]
+                }
+            },
+            "connected_accounts": []
+        },
         "expense_report": {
             "helper_process": ".\/accounting-and-finance\/expense_report\/process_helper_export.json",
             "template_process": ".\/accounting-and-finance\/expense_report\/process_template_export.json",
