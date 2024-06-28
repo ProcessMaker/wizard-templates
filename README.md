@@ -3,4 +3,4 @@ Enhance the usability and functionality of ProcessMaker. These templates offer s
 ## Accounting And Finance
 - **[Expense Report]**: Improve Expense Oversight with Efficient Data Management (Version 2.2.4)
 - **[Guided Invoice Approval]**: Drive action and measure your impact with a continuous, real-time tracking of invoices (Version 2.2.0)
-- **[Non-PO Invoice Approval]**: Drive action and measure your impact with a continuous, real-time tracking of invoices (Version 1.1.1 )
+- **[Non-PO Invoice Approval]**: Drive action and measure your impact with a continuous, real-time tracking of invoices (Version 1.1.1)
