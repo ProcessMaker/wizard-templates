@@ -24,9 +24,8 @@ function update_readme($categories) {
         foreach ($templates as $template) {
             $string = "- **[";
             $title = isset($template['template_details']['card-title']) ? $template['template_details']['card-title'] : '';
-            $desc = isset($template['template_details']['modal-description']) ? $template['template_details']['modal-description'] : '';
             $version = isset($template['template_details']['version']) ? $template['template_details']['version'] : '';
-            $string .= "{$title}]**: {$desc}";
+            $string .= "{$title}]**";
             if ($version) {
                 $string .= " (Version {$version})\n";
             } else {
