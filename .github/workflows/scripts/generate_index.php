@@ -222,7 +222,7 @@ function loadXmlAttributes($contentInfo, &$categories, $currentCategory, $templa
     $cardTitle = (string) $xml->attributes()['card-title'];
     $cardExcerpt = (string) $xml->attributes()['card-excerpt'];
     $modelExcerpt = (string) $xml->attributes()['modal-excerpt'];
-    $modelDescription = (string) $xml->attributes()['modal-description'];
+    $modelDescription = (array) $xml->attributes()['modal-description'];
     $version = (string) $xml->attributes()['version'];
     $uniqueTemplateId = (string) $xml->attributes()['unique-template-id'];
 
