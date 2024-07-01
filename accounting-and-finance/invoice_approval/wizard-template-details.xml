@@ -4,11 +4,8 @@
   card-excerpt="Approve and Reject invoice using OCR"
   modal-title="Welcome to ProcessMaker"
   modal-excerpt="Let's set up your Invoice Approval Process. We'll guide you through:"
-  modal-description=[
-    "Set up an email address to receive invoices from suppliers and users.",
-    "Add the users from your company who you want to use the system.",
-    "Add the list of GL account codes to allocate invoice line items."
-  ]
+  modal-description="Set up an email address to receive invoices from suppliers and users.; Add the users from your company who you want to use the system; Add the list of GL account codes to allocate invoice line items."
+  
   unique-template-id="invoice_approval"
   version="2.2.0"
 ></wizard-template>
