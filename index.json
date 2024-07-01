@@ -7,6 +7,7 @@
             "template_details": {
                 "card-title": "Non-PO Invoice Approval",
                 "card-excerpt": "Complete AP Approval process for invoice documents not related to a purchase order",
+                "modal-title": "",
                 "modal-excerpt": "Gather real-time data and approval on demand for invoices",
                 "modal-description": "Drive action and measure your impact with a continuous, real-time tracking of invoices",
                 "version": "1.1.1",
@@ -36,6 +37,7 @@
             "template_details": {
                 "card-title": "Expense Report",
                 "card-excerpt": "Approve and Reject Expenses with OCR",
+                "modal-title": "",
                 "modal-excerpt": "Access Real-Time Data and On-Demand Approval for Expenses",
                 "modal-description": "Improve Expense Oversight with Efficient Data Management",
                 "version": "2.2.4",
@@ -70,6 +72,7 @@
             "template_details": {
                 "card-title": "Guided Invoice Approval",
                 "card-excerpt": "Approve and Reject invoice using OCR",
+                "modal-title": "Welcome to ProcessMaker",
                 "modal-excerpt": "Let's set up your Invoice Approval Process. We'll guide you through:",
                 "modal-description": "Set up an email address to receive invoices from suppliers and users.; Add the users from your company who you want to use the system; Add the list of GL account codes to allocate invoice line items.",
                 "version": "2.2.0",
