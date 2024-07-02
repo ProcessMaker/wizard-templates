@@ -17,6 +17,7 @@
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/icon.png",
+                "list-icon": "",
                 "card-background": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/card-background.png",
                 "slides": [
                     ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/slides\/slide1.png"
@@ -47,6 +48,7 @@
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/expense_report\/assets\/icon.png",
+                "list-icon": "",
                 "card-background": ".\/accounting-and-finance\/expense_report\/assets\/card-background.png",
                 "slides": [
                     ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide3.jpg",
@@ -82,6 +84,7 @@
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/invoice_approval\/assets\/icon.png",
+                "list-icon": ".\/accounting-and-finance\/invoice_approval\/assets\/list-icon.png",
                 "card-background": ".\/accounting-and-finance\/invoice_approval\/assets\/card-background.png",
                 "slides": [
                     ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide1.png"
