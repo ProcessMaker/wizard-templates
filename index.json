@@ -1,34 +1,31 @@
 {
     "accounting-and-finance": {
-        "invoice_approval": {
-            "helper_process": ".\/accounting-and-finance\/invoice_approval\/process_helper_export.json",
-            "template_process": ".\/accounting-and-finance\/invoice_approval\/process_template_export.json",
+        "nonpo_invoice_approval": {
+            "helper_process": ".\/accounting-and-finance\/nonpo_invoice_approval\/process_helper_export.json",
+            "template_process": ".\/accounting-and-finance\/nonpo_invoice_approval\/process_template_export.json",
             "config_collection": "",
             "template_details": {
-                "card-title": "Guided Invoice Approval",
-                "card-excerpt": "Approve and Reject invoice using OCR",
-                "modal-title": "Welcome to ProcessMaker",
-                "modal-excerpt": "Let's set up your Invoice Approval Process. We'll guide you through:",
-                "modal-description": "Set up an email address to receive invoices from suppliers and users.; Add the users from your company who you want to use the system; Add the list of GL account codes to allocate invoice line items.",
-                "version": "2.2.0",
-                "unique-template-id": "invoice_approval",
-                "helper_process_hash": "a9ddb4f9656e3634df0cd718b1d1f2ab8143b028",
-                "template_process_hash": "e69da5090ec63170f1564188fd2940659f2a1b45"
+                "card-title": "Non-PO Invoice Approval",
+                "card-excerpt": "Complete AP Approval process for invoice documents not related to a purchase order",
+                "modal-title": "",
+                "modal-excerpt": "Gather real-time data and approval on demand for invoices",
+                "modal-description": "Drive action and measure your impact with a continuous, real-time tracking of invoices",
+                "version": "1.1.1",
+                "unique-template-id": "nonpo_invoice_approval",
+                "helper_process_hash": "9277145145aa7955818d2ff6069bb18b6151074a",
+                "template_process_hash": "e76c11e49184bb903e2126360c2d011a82c9fa44"
             },
             "assets": {
-                "icon": ".\/accounting-and-finance\/invoice_approval\/assets\/icon.png",
-                "list-icon": ".\/accounting-and-finance\/invoice_approval\/assets\/list-icon.png",
-                "card-background": ".\/accounting-and-finance\/invoice_approval\/assets\/card-background.png",
+                "icon": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/icon.png",
+                "list-icon": "",
+                "card-background": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/card-background.png",
                 "slides": [
-                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide1.png"
+                    ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/slides\/slide1.png"
                 ],
                 "launchpad": {
                     "process-card-background": "",
                     "slides": [
-                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.jpg",
-                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide2.jpg",
-                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide3.jpg",
-                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide4.jpg"
+                        ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.jpg"
                     ]
                 }
             },
@@ -61,41 +58,44 @@
                 "launchpad": {
                     "process-card-background": "",
                     "slides": [
-                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide1.jpg",
+                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide4.jpg",
                         ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide2.jpg",
-                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide3.jpg",
-                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide4.jpg"
+                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide1.jpg",
+                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide3.jpg"
                     ]
                 }
             },
             "connected_accounts": []
         },
-        "nonpo_invoice_approval": {
-            "helper_process": ".\/accounting-and-finance\/nonpo_invoice_approval\/process_helper_export.json",
-            "template_process": ".\/accounting-and-finance\/nonpo_invoice_approval\/process_template_export.json",
+        "invoice_approval": {
+            "helper_process": ".\/accounting-and-finance\/invoice_approval\/process_helper_export.json",
+            "template_process": ".\/accounting-and-finance\/invoice_approval\/process_template_export.json",
             "config_collection": "",
             "template_details": {
-                "card-title": "Non-PO Invoice Approval",
-                "card-excerpt": "Complete AP Approval process for invoice documents not related to a purchase order",
-                "modal-title": "",
-                "modal-excerpt": "Gather real-time data and approval on demand for invoices",
-                "modal-description": "Drive action and measure your impact with a continuous, real-time tracking of invoices",
-                "version": "1.1.1",
-                "unique-template-id": "nonpo_invoice_approval",
-                "helper_process_hash": "9277145145aa7955818d2ff6069bb18b6151074a",
-                "template_process_hash": "e76c11e49184bb903e2126360c2d011a82c9fa44"
+                "card-title": "Guided Invoice Approval",
+                "card-excerpt": "Approve and Reject invoice using OCR",
+                "modal-title": "Welcome to ProcessMaker",
+                "modal-excerpt": "Let's set up your Invoice Approval Process. We'll guide you through:",
+                "modal-description": "Set up an email address to receive invoices from suppliers and users.; Add the users from your company who you want to use the system.; Add the list of GL account codes to allocate invoice line items.",
+                "version": "2.2.0",
+                "unique-template-id": "invoice_approval",
+                "helper_process_hash": "a9ddb4f9656e3634df0cd718b1d1f2ab8143b028",
+                "template_process_hash": "e69da5090ec63170f1564188fd2940659f2a1b45"
             },
             "assets": {
-                "icon": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/icon.png",
-                "list-icon": "",
-                "card-background": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/card-background.png",
+                "icon": ".\/accounting-and-finance\/invoice_approval\/assets\/icon.png",
+                "list-icon": ".\/accounting-and-finance\/invoice_approval\/assets\/list-icon.png",
+                "card-background": ".\/accounting-and-finance\/invoice_approval\/assets\/card-background.png",
                 "slides": [
-                    ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/slides\/slide1.png"
+                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide1.png"
                 ],
                 "launchpad": {
                     "process-card-background": "",
                     "slides": [
-                        ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.jpg"
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide4.jpg",
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide2.jpg",
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.jpg",
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide3.jpg"
                     ]
                 }
             },
