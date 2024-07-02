@@ -104,6 +104,7 @@ function initializeTemplateStructure()
         ],
         "assets" => [
             "icon" => "",
+            "list-icon" => "",
             "card-background" => "",
             "slides" => [],
             "launchpad"  => [
@@ -148,6 +149,10 @@ function handleAssetFile($assetFileInfo, &$categories, $currentCategory, $templa
 
     if ($assetName === 'icon') {
         $categories[$currentCategory][$templateName]['assets']['icon'] = $assetFileInfo->getPathname();
+    }
+
+    if ($assetName === 'list-icon') {
+        $categories[$currentCategory][$templateName]['assets']['list-icon'] = $assetFileInfo->getPathname();
     }
 
     if ($assetFileInfo->isDir()) {
