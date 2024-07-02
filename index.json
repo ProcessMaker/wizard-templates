@@ -16,7 +16,7 @@
                 "template_process_hash": "e76c11e49184bb903e2126360c2d011a82c9fa44"
             },
             "assets": {
-                "icon": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/icon.png",
+                "check-icon": "",
                 "card-background": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/card-background.png",
                 "slides": [
                     ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/slides\/slide1.png"
@@ -46,7 +46,7 @@
                 "template_process_hash": "cfd95703a513052a7be5a6e37d82c419dc0c9d38"
             },
             "assets": {
-                "icon": ".\/accounting-and-finance\/expense_report\/assets\/icon.png",
+                "check-icon": "",
                 "card-background": ".\/accounting-and-finance\/expense_report\/assets\/card-background.png",
                 "slides": [
                     ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide3.jpg",
@@ -81,13 +81,10 @@
                 "template_process_hash": "e69da5090ec63170f1564188fd2940659f2a1b45"
             },
             "assets": {
-                "icon": ".\/accounting-and-finance\/invoice_approval\/assets\/icon.png",
+                "check-icon": ".\/accounting-and-finance\/invoice_approval\/assets\/check-icon.png",
                 "card-background": ".\/accounting-and-finance\/invoice_approval\/assets\/card-background.png",
                 "slides": [
-                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide3.png",
-                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide1.png",
-                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide4.png",
-                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide2.png"
+                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide1.png"
                 ],
                 "launchpad": {
                     "process-card-background": "",
