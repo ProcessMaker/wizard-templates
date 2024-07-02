@@ -24,9 +24,8 @@ function update_readme($categories) {
         foreach ($templates as $template) {
             $string = "- **[";
             $title = isset($template['template_details']['card-title']) ? $template['template_details']['card-title'] : '';
-            $desc = isset($template['template_details']['modal-description']) ? $template['template_details']['modal-description'] : '';
             $version = isset($template['template_details']['version']) ? $template['template_details']['version'] : '';
-            $string .= "{$title}]**: {$desc}";
+            $string .= "{$title}]**";
             if ($version) {
                 $string .= " (Version {$version})\n";
             } else {
@@ -95,6 +94,7 @@ function initializeTemplateStructure()
         "template_details" => [
             "card-title" => "",
             "card-excerpt" => "",
+            "modal-title" => "",
             "modal-excerpt" => "",
             "modal-description" => "",
             'version' => "",
@@ -222,6 +222,7 @@ function loadXmlAttributes($contentInfo, &$categories, $currentCategory, $templa
 
     $cardTitle = (string) $xml->attributes()['card-title'];
     $cardExcerpt = (string) $xml->attributes()['card-excerpt'];
+    $modelTitle = (string) $xml->attributes()['modal-title'];
     $modelExcerpt = (string) $xml->attributes()['modal-excerpt'];
     $modelDescription = (string) $xml->attributes()['modal-description'];
     $version = (string) $xml->attributes()['version'];
@@ -229,6 +230,7 @@ function loadXmlAttributes($contentInfo, &$categories, $currentCategory, $templa
 
     $categories[$currentCategory][$templateName]['template_details']['card-title'] = $cardTitle;
     $categories[$currentCategory][$templateName]['template_details']['card-excerpt'] = $cardExcerpt;
+    $categories[$currentCategory][$templateName]['template_details']['modal-title'] = $modelTitle;
     $categories[$currentCategory][$templateName]['template_details']['modal-excerpt'] = $modelExcerpt;
     $categories[$currentCategory][$templateName]['template_details']['modal-description'] = $modelDescription;
     $categories[$currentCategory][$templateName]['template_details']['version'] = $version;
