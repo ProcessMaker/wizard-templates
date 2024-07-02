@@ -103,7 +103,7 @@ function initializeTemplateStructure()
             "template_process_hash" => "",
         ],
         "assets" => [
-            "check-icon" => "",
+            "icon" => "",
             "card-background" => "",
             "slides" => [],
             "launchpad"  => [
@@ -146,8 +146,8 @@ function handleAssetFile($assetFileInfo, &$categories, $currentCategory, $templa
         $categories[$currentCategory][$templateName]['assets']['card-background'] = $assetFileInfo->getPathname();
     }
 
-    if ($assetName === 'check-icon') {
-        $categories[$currentCategory][$templateName]['assets']['check-icon'] = $assetFileInfo->getPathname();
+    if ($assetName === 'icon') {
+        $categories[$currentCategory][$templateName]['assets']['icon'] = $assetFileInfo->getPathname();
     }
 
     if ($assetFileInfo->isDir()) {
