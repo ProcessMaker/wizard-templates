@@ -7,6 +7,7 @@
             "template_details": {
                 "card-title": "Non-PO Invoice Approval",
                 "card-excerpt": "Complete AP Approval process for invoice documents not related to a purchase order",
+                "modal-title": "",
                 "modal-excerpt": "Gather real-time data and approval on demand for invoices",
                 "modal-description": "Drive action and measure your impact with a continuous, real-time tracking of invoices",
                 "version": "1.1.1",
@@ -16,6 +17,7 @@
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/icon.png",
+                "list-icon": "",
                 "card-background": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/card-background.png",
                 "slides": [
                     ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/slides\/slide1.png"
@@ -36,6 +38,7 @@
             "template_details": {
                 "card-title": "Expense Report",
                 "card-excerpt": "Approve and Reject Expenses with OCR",
+                "modal-title": "",
                 "modal-excerpt": "Access Real-Time Data and On-Demand Approval for Expenses",
                 "modal-description": "Improve Expense Oversight with Efficient Data Management",
                 "version": "2.2.4",
@@ -45,6 +48,7 @@
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/expense_report\/assets\/icon.png",
+                "list-icon": "",
                 "card-background": ".\/accounting-and-finance\/expense_report\/assets\/card-background.png",
                 "slides": [
                     ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide3.jpg",
@@ -70,8 +74,9 @@
             "template_details": {
                 "card-title": "Guided Invoice Approval",
                 "card-excerpt": "Approve and Reject invoice using OCR",
-                "modal-excerpt": "Gather real-time data and approval on demand for invoices",
-                "modal-description": "Drive action and measure your impact with a continuous, real-time tracking of invoices",
+                "modal-title": "Welcome to ProcessMaker",
+                "modal-excerpt": "Let's set up your Invoice Approval Process. We'll guide you through:",
+                "modal-description": "Set up an email address to receive invoices from suppliers and users.; Add the users from your company who you want to use the system.; Add the list of GL account codes to allocate invoice line items.",
                 "version": "2.2.0",
                 "unique-template-id": "invoice_approval",
                 "helper_process_hash": "a9ddb4f9656e3634df0cd718b1d1f2ab8143b028",
@@ -79,12 +84,10 @@
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/invoice_approval\/assets\/icon.png",
+                "list-icon": ".\/accounting-and-finance\/invoice_approval\/assets\/list-icon.png",
                 "card-background": ".\/accounting-and-finance\/invoice_approval\/assets\/card-background.png",
                 "slides": [
-                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide3.png",
-                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide1.png",
-                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide4.png",
-                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide2.png"
+                    ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide1.png"
                 ],
                 "launchpad": {
                     "process-card-background": "",
