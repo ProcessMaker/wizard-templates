@@ -6,7 +6,7 @@
             "config_collection": "",
             "template_details": {
                 "card-title": "Non-PO Invoice Approval",
-                "card-excerpt": "Approve and Reject invoice using OCR",
+                "card-excerpt": "Drive action and measure your impact with a continuous, real-time tracking of invoices",
                 "modal-title": "Welcome to ProcessMaker",
                 "modal-excerpt": "Let's set up your Invoice Approval Process. We'll guide you through:",
                 "modal-description": "Set up an email address to receive invoices from suppliers and users.; Add the users from your company who you want to use the system.; Add the list of GL account codes to allocate invoice line items.",
@@ -17,7 +17,7 @@
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/icon.png",
-                "list-icon": "",
+                "list-icon": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/list-icon.png",
                 "card-background": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/card-background.png",
                 "slides": [
                     ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/slides\/slide1.png"
@@ -84,7 +84,7 @@
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/invoice_approval\/assets\/icon.png",
-                "list-icon": ".\/accounting-and-finance\/invoice_approval\/assets\/list-icon.png",
+                "list-icon": "",
                 "card-background": ".\/accounting-and-finance\/invoice_approval\/assets\/card-background.png",
                 "slides": [
                     ".\/accounting-and-finance\/invoice_approval\/assets\/slides\/slide1.png"
