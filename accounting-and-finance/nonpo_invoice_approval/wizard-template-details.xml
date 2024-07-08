@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <wizard-template
   card-title="Non-PO Invoice Approval"
-  card-excerpt="This is your ally to simplify expense approvals"
+  card-excerpt="This is your ally to simplify invoice approvals"
   modal-title="Welcome to ProcessMaker"
   modal-excerpt="Let's set up your Invoice Approval Process. We'll guide you through:"
   modal-description="Set up an email address to receive invoices from suppliers and users.; Add the users from your company who you want to use the system.; Add the list of GL account codes to allocate invoice line items."
