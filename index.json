@@ -80,10 +80,10 @@
                 "modal-title": "Welcome to ProcessMaker",
                 "modal-excerpt": "Let's set up your Invoice Approval Process. We'll guide you through:",
                 "modal-description": "Set up an email address to receive invoices from suppliers and users.; Add the users from your company who you want to use the system.; Add the list of GL account codes to allocate invoice line items.",
-                "version": "1.2.2",
+                "version": "1.2.3",
                 "unique-template-id": "nonpo_invoice_approval",
                 "helper_process_hash": "45b872664f9ba6dd198ffda40862d8bd0ea8510e",
-                "template_process_hash": "34455ff108915a8224ccd7fb1a513b66946c061e"
+                "template_process_hash": "4991d3d6b7a6862c206cef7294a3481a2e7e7c13"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/icon.png",
