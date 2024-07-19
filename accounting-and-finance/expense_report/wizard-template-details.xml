@@ -2,8 +2,8 @@
 <wizard-template
   card-title="Expense Report"
   card-excerpt="Approve and Reject Expenses with OCR"
-  modal-excerpt="Access Real-Time Data and On-Demand Approval for Expenses"
-  modal-description="Improve Expense Oversight with Efficient Data Management"
+  modal-excerpt="Setup your expense tool in two easy steps:"
+  modal-description="; Step 1: Set up your HR Platform; Step 2: Set up your Auto Approval Rules"
   unique-template-id="expense_report"
-  version="2.2.5" 
+  version="2.2.6" 
 ></wizard-template>
