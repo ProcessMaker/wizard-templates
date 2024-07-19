@@ -8,12 +8,12 @@
                 "card-title": "Expense Report",
                 "card-excerpt": "Approve and Reject Expenses with OCR",
                 "modal-title": "",
-                "modal-excerpt": "Access Real-Time Data and On-Demand Approval for Expenses",
-                "modal-description": "Improve Expense Oversight with Efficient Data Management",
-                "version": "2.2.5",
+                "modal-excerpt": "Setup your expense tool in two easy steps:",
+                "modal-description": "; Step 1: Set up your HR Platform; Step 2: Set up your Auto Approval Rules",
+                "version": "2.2.6",
                 "unique-template-id": "expense_report",
                 "helper_process_hash": "52330ffaf17a021f67e3b96d266121ae6b4d4524",
-                "template_process_hash": "21008a7acbc4734c36c2f7f5d28ea18ff4ef698e"
+                "template_process_hash": "7bcf08dfc4e106ba24cdb48cda6f01cf5275a11f"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/expense_report\/assets\/icon.png",
@@ -27,10 +27,10 @@
                 "launchpad": {
                     "process-card-background": "",
                     "slides": [
-                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide2.jpg",
-                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide1.jpg",
-                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide4.jpg",
-                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide3.jpg"
+                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide2.png",
+                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide1.png",
+                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide4.png",
+                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide3.png"
                     ]
                 }
             },
