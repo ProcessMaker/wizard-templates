@@ -83,7 +83,7 @@
                 "version": "1.2.4",
                 "unique-template-id": "nonpo_invoice_approval",
                 "helper_process_hash": "6d789928ee72fd26feec0f1206d16f4095339a5a",
-                "template_process_hash": "455ff1421d5cf3f8264b719814fc5aa5d563b63a"
+                "template_process_hash": "89444ae0e980fd261e8850c1d92b8979bc7a4dbb"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/icon.png",
