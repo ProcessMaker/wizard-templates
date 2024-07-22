@@ -3,4 +3,4 @@ Enhance the usability and functionality of ProcessMaker. These templates offer s
 ## Accounting And Finance
 - **[Expense Report]** (Version 2.2.6)
 - **[Guided Invoice Approval]** (Version 2.2.0)
-- **[Non-PO Invoice Approval]** (Version 1.2.3)
+- **[Non-PO Invoice Approval]** (Version 1.2.4)
