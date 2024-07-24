@@ -20,16 +20,16 @@
                 "list-icon": "",
                 "card-background": ".\/accounting-and-finance\/expense_report\/assets\/card-background.png",
                 "slides": [
+                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide1.jpg",
                     ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide2.jpg",
-                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide3.jpg",
-                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide1.jpg"
+                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide3.jpg"
                 ],
                 "launchpad": {
                     "process-card-background": "",
                     "slides": [
-                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide2.png",
-                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide1.png",
                         ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide4.png",
+                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide1.png",
+                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide2.png",
                         ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide3.png"
                     ]
                 }
@@ -61,10 +61,10 @@
                 "launchpad": {
                     "process-card-background": "",
                     "slides": [
-                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide2.jpg",
-                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.jpg",
                         ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide4.jpg",
-                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide3.jpg"
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.jpg",
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide3.jpg",
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide2.jpg"
                     ]
                 }
             },
@@ -80,10 +80,10 @@
                 "modal-title": "Welcome to ProcessMaker",
                 "modal-excerpt": "Let's set up your Invoice Approval Process. We'll guide you through:",
                 "modal-description": "Set up an email address to receive invoices from suppliers and users.; Add the users from your company who you want to use the system.; Add the list of GL account codes to allocate invoice line items.",
-                "version": "1.3.0",
+                "version": "1.3.1",
                 "unique-template-id": "nonpo_invoice_approval",
                 "helper_process_hash": "6d789928ee72fd26feec0f1206d16f4095339a5a",
-                "template_process_hash": "f5dcc985fd5d54a9980d438687e69fcdf2a54393"
+                "template_process_hash": "ac174edb849e299b86e39e0aacff1bfec1fd2506"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/icon.png",
