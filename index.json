@@ -10,10 +10,10 @@
                 "modal-title": "",
                 "modal-excerpt": "Setup your expense tool in two easy steps:",
                 "modal-description": "; Step 1: Set up your HR Platform; Step 2: Set up your Auto Approval Rules",
-                "version": "2.2.7",
+                "version": "3.0.0",
                 "unique-template-id": "expense_report",
                 "helper_process_hash": "52330ffaf17a021f67e3b96d266121ae6b4d4524",
-                "template_process_hash": "722e783d3f0fb07a60a7aade9b1a550b6ceb3850"
+                "template_process_hash": "a27a54dfcbcdb035bcfd7050621f4f2ac10f84b6"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/expense_report\/assets\/icon.png",
