@@ -80,10 +80,10 @@
                 "modal-title": "Welcome to ProcessMaker",
                 "modal-excerpt": "Let's set up your Invoice Approval Process. We'll guide you through:",
                 "modal-description": "Set up an email address to receive invoices from suppliers and users.; Add the users from your company who you want to use the system.; Add the list of GL account codes to allocate invoice line items.",
-                "version": "1.4.0",
+                "version": "1.5.0",
                 "unique-template-id": "nonpo_invoice_approval",
-                "helper_process_hash": "390981f0b8dd6e1581744bc763cebb2189dd23f6",
-                "template_process_hash": "b13ec1622deef50313e646585ff5e757f9544369"
+                "helper_process_hash": "7d922aa6161fa6f12d348b44048a5d9139c02b34",
+                "template_process_hash": "119c9e1012cb3e6453be27a0c3f20bf1e143c6ca"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/icon.png",
@@ -95,7 +95,9 @@
                 "launchpad": {
                     "process-card-background": "",
                     "slides": [
-                        ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.png"
+                        ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.png",
+                        ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/launchpad\/slides\/launchpad-slide2.png",
+                        ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/launchpad\/slides\/launchpad-slide3.png"
                     ]
                 }
             },
