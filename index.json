@@ -48,12 +48,12 @@
                 "unique-template-id": "expense_report",
                 "helper_process_hash": "52330ffaf17a021f67e3b96d266121ae6b4d4524",
                 "template_process_hash": "c231eacbe17bccacbc02f3570fbe98a8e41fb1d3",
-                "asset_hash": "dca55da462f336eb66b749f04bbd8dce21f64ec7bbc0ed3f3ab492f616ee4946"
+                "asset_hash": "09c99968e7553dd372176f052ed968e187b837715e59f7ff95204b1014d00857"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/expense_report\/assets\/icon.png",
                 "list-icon": ".\/accounting-and-finance\/expense_report\/assets\/list-icon.png",
-                "card-background": "",
+                "card-background": ".\/accounting-and-finance\/expense_report\/assets\/card-background.png",
                 "slides": [
                     ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide3.jpg",
                     ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide2.jpg",
