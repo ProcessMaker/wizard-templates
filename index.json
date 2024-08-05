@@ -48,7 +48,7 @@
                 "unique-template-id": "expense_report",
                 "helper_process_hash": "52330ffaf17a021f67e3b96d266121ae6b4d4524",
                 "template_process_hash": "c231eacbe17bccacbc02f3570fbe98a8e41fb1d3",
-                "asset_hash": "09c99968e7553dd372176f052ed968e187b837715e59f7ff95204b1014d00857"
+                "asset_hash": "139b2a2fa0fb553bc7e5bbd803f316e9fb79315285f2be48970ab87cbefe359c"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/expense_report\/assets\/icon.png",
