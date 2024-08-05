@@ -48,7 +48,7 @@
                 "unique-template-id": "expense_report",
                 "helper_process_hash": "52330ffaf17a021f67e3b96d266121ae6b4d4524",
                 "template_process_hash": "c231eacbe17bccacbc02f3570fbe98a8e41fb1d3",
-                "asset_hash": "a72e791eef0f5c4e4cd05e2f5ba3bb4fd152431fb137ca85bbb9fa88602487ab"
+                "asset_hash": "139b2a2fa0fb553bc7e5bbd803f316e9fb79315285f2be48970ab87cbefe359c"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/expense_report\/assets\/icon.png",
@@ -57,8 +57,7 @@
                 "slides": [
                     ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide3.jpg",
                     ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide2.jpg",
-                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide1.jpg",
-                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide4.png"
+                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide1.jpg"
                 ],
                 "launchpad": {
                     "process-card-background": "",
