@@ -101,6 +101,7 @@ function initializeTemplateStructure()
             'unique-template-id' => "",
             "helper_process_hash" => "",
             "template_process_hash" => "",
+            "asset_hash" => "",
         ],
         "assets" => [
             "icon" => "",
@@ -127,21 +128,34 @@ function handleTemplateContent($contentInfo, &$categories, $currentCategory, $te
 
 function handleAssetDirectory($assetDirectory, &$categories, $currentCategory, $templateName)
 {
+    // Initialize hash context for the entire asset directory
+    $hashContext = hash_init('sha256');
     $assets = new DirectoryIterator($assetDirectory->getPathname());
-    
+
     foreach ($assets as $assetFileInfo) {
         if ($assetFileInfo->isDot() || strpos($assetFileInfo->getBasename(), '.') === 0) {
             continue;
         }
 
-        handleAssetFile($assetFileInfo, $categories, $currentCategory, $templateName);
+        handleAssetFile($assetFileInfo, $categories, $currentCategory, $templateName, $hashContext);
     }
+    
+    // Finalize the hash for the entire directory
+    $assetDirectoryHash = hash_final($hashContext);
+    $categories[$currentCategory][$templateName]['template_details']['asset_hash'] = $assetDirectoryHash;
 }
 
-function handleAssetFile($assetFileInfo, &$categories, $currentCategory, $templateName)
+function handleAssetFile($assetFileInfo, &$categories, $currentCategory, $templateName, $hashContext)
 {
     $assetName = $assetFileInfo->getFilename();
     $assetName = substr($assetName, 0, strrpos($assetName, "."));
+
+    // Update hash context with the file name and contents of the asset file
+    if ($assetFileInfo->isFile()) {
+        $fileContents = file_get_contents($assetFileInfo->getPathname());
+        hash_update($hashContext, $assetFileInfo->getPathname());
+        hash_update($hashContext, $fileContents);
+    }
 
     if ($assetName === 'card-background') {
         $categories[$currentCategory][$templateName]['assets']['card-background'] = $assetFileInfo->getPathname();
@@ -156,11 +170,11 @@ function handleAssetFile($assetFileInfo, &$categories, $currentCategory, $templa
     }
 
     if ($assetFileInfo->isDir()) {
-        handleSubDirectoryAssets($assetFileInfo, $categories, $currentCategory, $templateName);
+        handleSubDirectoryAssets($assetFileInfo, $categories, $currentCategory, $templateName, $hashContext);
     }
 }
 
-function handleSubDirectoryAssets($directory, &$categories, $currentCategory, $templateName)
+function handleSubDirectoryAssets($directory, &$categories, $currentCategory, $templateName, $hashContext)
 {
     $path = explode('/', $directory->getPathname());
     $directoryName = end($path);
@@ -172,17 +186,22 @@ function handleSubDirectoryAssets($directory, &$categories, $currentCategory, $t
         }
         
         if ($fileInfo->isDir()) {
-            handleSubDirectoryAssets($fileInfo, $categories, $currentCategory, $templateName);
+            handleSubDirectoryAssets($fileInfo, $categories, $currentCategory, $templateName, $hashContext);
         } else {
-            handleAssetSubDirectoryFile($fileInfo, $categories, $currentCategory, $templateName, $parentName, $directoryName);
+            handleAssetSubDirectoryFile($fileInfo, $categories, $currentCategory, $templateName, $parentName, $directoryName, $hashContext);
         }
     }
 }
 
-function handleAssetSubDirectoryFile($fileInfo, &$categories, $currentCategory, $templateName, $parentName, $directoryName)
+function handleAssetSubDirectoryFile($fileInfo, &$categories, $currentCategory, $templateName, $parentName, $directoryName, $hashContext)
 {
     $assetName = $fileInfo->getFilename();
     $assetName = substr($assetName, 0, strrpos($assetName, "."));
+
+    // Update hash context with the contents of the asset file
+    $fileContents = file_get_contents($fileInfo->getPathname());
+    hash_update($hashContext, $fileInfo->getPathname());
+    hash_update($hashContext, $fileContents);
 
     if ($parentName === 'assets') {
         if ($assetName === 'process-card-background') {
@@ -241,8 +260,6 @@ function loadXmlAttributes($contentInfo, &$categories, $currentCategory, $templa
     $categories[$currentCategory][$templateName]['template_details']['version'] = $version;
     $categories[$currentCategory][$templateName]['template_details']['unique-template-id'] = $uniqueTemplateId;
 }
-
-// You also need to define the compute_hash and update_readme functions if they are not already defined.
 
 function sort_categories(&$categories) {
     ksort($categories);
