@@ -13,7 +13,8 @@
                 "version": "1.5.3",
                 "unique-template-id": "nonpo_invoice_approval",
                 "helper_process_hash": "02cc0bba3fd7b8237f18fdbd21de5ce327c84759",
-                "template_process_hash": "a7dd2fb87370c9ba637d9dc0f62844107f4356d1"
+                "template_process_hash": "a7dd2fb87370c9ba637d9dc0f62844107f4356d1",
+                "asset_hash": "6b2e1a3a9c53a54bda8d5b718ffaeb44b6dad51d8ba7afadec5cd4ffc8df443f"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/icon.png",
@@ -46,7 +47,8 @@
                 "version": "2.2.0",
                 "unique-template-id": "invoice_approval",
                 "helper_process_hash": "a9ddb4f9656e3634df0cd718b1d1f2ab8143b028",
-                "template_process_hash": "e69da5090ec63170f1564188fd2940659f2a1b45"
+                "template_process_hash": "e69da5090ec63170f1564188fd2940659f2a1b45",
+                "asset_hash": "4909c70d195346c017d2f3a903fae0d8682da97317130470dbb784e147eacc2c"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/invoice_approval\/assets\/icon.png",
@@ -80,7 +82,8 @@
                 "version": "3.0.2",
                 "unique-template-id": "expense_report",
                 "helper_process_hash": "52330ffaf17a021f67e3b96d266121ae6b4d4524",
-                "template_process_hash": "3b97a74e835f95edd201f42d4e7c8af92f7deabf"
+                "template_process_hash": "3b97a74e835f95edd201f42d4e7c8af92f7deabf",
+                "asset_hash": "520f0f0ac3328d93e37b1011c46141b51bcd7002a4e397cffa168de44022e28b"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/expense_report\/assets\/icon.png",
