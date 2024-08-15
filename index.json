@@ -78,21 +78,20 @@
                 "card-excerpt": "Approve and Reject Expenses with OCR",
                 "modal-title": "",
                 "modal-excerpt": "Setup your expense tool in two easy steps:",
-                "modal-description": "Step 1: Set up your HR Platform; Step 2: Set up your Auto Approval Rules",
-                "version": "3.0.3",
+                "modal-description": "Step 1: Set up your HR Platform",
+                "version": "3.1.0",
                 "unique-template-id": "expense_report",
-                "helper_process_hash": "52330ffaf17a021f67e3b96d266121ae6b4d4524",
-                "template_process_hash": "f821eaa2953166d6a9190322aeab17d4dff3ec89",
-                "asset_hash": "520f0f0ac3328d93e37b1011c46141b51bcd7002a4e397cffa168de44022e28b"
+                "helper_process_hash": "7ae449f6897dbd90ddc86c26934b89809694735b",
+                "template_process_hash": "c178dbdcbdb5000d0504d3ef57a1164826e102f8",
+                "asset_hash": "3ccec46fb72026a3db8d0968f250e915fec300e7fc5c59a08b9a1ebbad5e8214"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/expense_report\/assets\/icon.png",
                 "list-icon": ".\/accounting-and-finance\/expense_report\/assets\/list-icon.png",
                 "card-background": ".\/accounting-and-finance\/expense_report\/assets\/card-background.png",
                 "slides": [
-                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide1.jpg",
-                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide2.jpg",
-                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide3.jpg"
+                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide1.png",
+                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide2.png"
                 ],
                 "launchpad": {
                     "process-card-background": "",
