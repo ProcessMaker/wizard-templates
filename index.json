@@ -79,19 +79,18 @@
                 "modal-title": "",
                 "modal-excerpt": "Setup your expense tool in two easy steps:",
                 "modal-description": "Step 1: Set up your HR Platform",
-                "version": "3.1.0",
+                "version": "3.1.1",
                 "unique-template-id": "expense_report",
                 "helper_process_hash": "7ae449f6897dbd90ddc86c26934b89809694735b",
-                "template_process_hash": "c178dbdcbdb5000d0504d3ef57a1164826e102f8",
-                "asset_hash": "3ccec46fb72026a3db8d0968f250e915fec300e7fc5c59a08b9a1ebbad5e8214"
+                "template_process_hash": "2490dcfaf4c91f0cc47781d0a0656d6954fd3533",
+                "asset_hash": "5c6eb41cda3dba35cc645a6980283d84ef821c5b764574bbdf57d85e249df541"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/expense_report\/assets\/icon.png",
                 "list-icon": ".\/accounting-and-finance\/expense_report\/assets\/list-icon.png",
                 "card-background": ".\/accounting-and-finance\/expense_report\/assets\/card-background.png",
                 "slides": [
-                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide1.png",
-                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide2.png"
+                    ".\/accounting-and-finance\/expense_report\/assets\/slides\/slide1.png"
                 ],
                 "launchpad": {
                     "process-card-background": "",
