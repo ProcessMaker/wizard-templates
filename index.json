@@ -1,39 +1,5 @@
 {
     "accounting-and-finance": {
-        "nonpo_invoice_approval": {
-            "helper_process": ".\/accounting-and-finance\/nonpo_invoice_approval\/process_helper_export.json",
-            "template_process": ".\/accounting-and-finance\/nonpo_invoice_approval\/process_template_export.json",
-            "config_collection": "",
-            "template_details": {
-                "card-title": "Non-PO Invoice Approval",
-                "card-excerpt": "This is your ally to simplify invoice approvals",
-                "modal-title": "Welcome to ProcessMaker",
-                "modal-excerpt": "Let's set up your Invoice Approval Process. We'll guide you through:",
-                "modal-description": "Set up an email address to receive invoices from suppliers and users.; Add the users from your company who you want to use the system.; Add the list of GL account codes to allocate invoice line items.",
-                "version": "1.8.0",
-                "unique-template-id": "nonpo_invoice_approval",
-                "helper_process_hash": "b92b9a9ce569ef9de4feb117d99588f3edd6b431",
-                "template_process_hash": "4f1de9b109205532ffdbe05e5492e88cc7ab2fff",
-                "asset_hash": "c8a3f25695d86f6ec0c3e973837e7993bebda854fc8e668adc0b61f4af69b5ba"
-            },
-            "assets": {
-                "icon": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/icon.png",
-                "list-icon": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/list-icon.png",
-                "card-background": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/card-background.png",
-                "slides": [
-                    ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/slides\/slide1.png"
-                ],
-                "launchpad": {
-                    "process-card-background": "",
-                    "slides": [
-                        ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/launchpad\/slides\/launchpad-slide3.png",
-                        ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.png",
-                        ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/launchpad\/slides\/launchpad-slide2.png"
-                    ]
-                }
-            },
-            "connected_accounts": []
-        },
         "invoice_approval": {
             "helper_process": ".\/accounting-and-finance\/invoice_approval\/process_helper_export.json",
             "template_process": ".\/accounting-and-finance\/invoice_approval\/process_template_export.json",
@@ -48,7 +14,7 @@
                 "unique-template-id": "invoice_approval",
                 "helper_process_hash": "a9ddb4f9656e3634df0cd718b1d1f2ab8143b028",
                 "template_process_hash": "e69da5090ec63170f1564188fd2940659f2a1b45",
-                "asset_hash": "4909c70d195346c017d2f3a903fae0d8682da97317130470dbb784e147eacc2c"
+                "asset_hash": "ccd6ad92e7521ea83eefc02d244d5811c4661ba73925ea969cc14cd8362079d0"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/invoice_approval\/assets\/icon.png",
@@ -60,9 +26,9 @@
                 "launchpad": {
                     "process-card-background": "",
                     "slides": [
-                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.jpg",
                         ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide4.jpg",
                         ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide3.jpg",
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.jpg",
                         ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide2.jpg"
                     ]
                 }
@@ -83,7 +49,7 @@
                 "unique-template-id": "expense_report",
                 "helper_process_hash": "89f3558b4d43d2aefe129652622ebde4a54e3d94",
                 "template_process_hash": "76f4028b0e133e4b3e93907c58833af2f3067436",
-                "asset_hash": "5c6eb41cda3dba35cc645a6980283d84ef821c5b764574bbdf57d85e249df541"
+                "asset_hash": "a026d86688d54727632b82f56adc0ba04ad3b037e0f124f9435ad60301e5c757"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/expense_report\/assets\/icon.png",
@@ -95,10 +61,44 @@
                 "launchpad": {
                     "process-card-background": "",
                     "slides": [
-                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide4.png",
-                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide3.png",
+                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide2.png",
                         ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide1.png",
-                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide2.png"
+                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide3.png",
+                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide4.png"
+                    ]
+                }
+            },
+            "connected_accounts": []
+        },
+        "nonpo_invoice_approval": {
+            "helper_process": ".\/accounting-and-finance\/nonpo_invoice_approval\/process_helper_export.json",
+            "template_process": ".\/accounting-and-finance\/nonpo_invoice_approval\/process_template_export.json",
+            "config_collection": "",
+            "template_details": {
+                "card-title": "Non-PO Invoice Approval",
+                "card-excerpt": "This is your ally to simplify invoice approvals",
+                "modal-title": "Welcome to ProcessMaker",
+                "modal-excerpt": "Let's set up your Invoice Approval Process. We'll guide you through:",
+                "modal-description": "Set up an email address to receive invoices from suppliers and users.; Add the users from your company who you want to use the system.; Add the list of GL account codes to allocate invoice line items.",
+                "version": "1.8.1",
+                "unique-template-id": "nonpo_invoice_approval",
+                "helper_process_hash": "b92b9a9ce569ef9de4feb117d99588f3edd6b431",
+                "template_process_hash": "ed4b86be327677cc8234d7d170b59ea3b9a1da4f",
+                "asset_hash": "8853435ebd70fdad33d0f4dcce76a43a75ac7bdf4350daa20dfbdba014b944a1"
+            },
+            "assets": {
+                "icon": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/icon.png",
+                "list-icon": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/list-icon.png",
+                "card-background": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/card-background.png",
+                "slides": [
+                    ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/slides\/slide1.png"
+                ],
+                "launchpad": {
+                    "process-card-background": "",
+                    "slides": [
+                        ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/launchpad\/slides\/launchpad-slide2.png",
+                        ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.png",
+                        ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/launchpad\/slides\/launchpad-slide3.png"
                     ]
                 }
             },
