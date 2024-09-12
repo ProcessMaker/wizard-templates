@@ -49,7 +49,7 @@
                 "unique-template-id": "expense_report",
                 "helper_process_hash": "036a0ac861f63fd1d45d73d5d7615aef6f4f6f30",
                 "template_process_hash": "7ff1c7c471b2032c060238fd476ea003d7ea7f6e",
-                "asset_hash": "a026d86688d54727632b82f56adc0ba04ad3b037e0f124f9435ad60301e5c757"
+                "asset_hash": "3b312874294febaf5f32c8b2ded036b6fb2548d7f0ef62dcd83bf82878feef31"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/expense_report\/assets\/icon.png",
@@ -60,12 +60,7 @@
                 ],
                 "launchpad": {
                     "process-card-background": "",
-                    "slides": [
-                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide2.png",
-                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide1.png",
-                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide3.png",
-                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide4.png"
-                    ]
+                    "slides": []
                 }
             },
             "connected_accounts": []
