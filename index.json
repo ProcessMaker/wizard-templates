@@ -14,7 +14,7 @@
                 "unique-template-id": "invoice_approval",
                 "helper_process_hash": "a9ddb4f9656e3634df0cd718b1d1f2ab8143b028",
                 "template_process_hash": "e69da5090ec63170f1564188fd2940659f2a1b45",
-                "asset_hash": "ccd6ad92e7521ea83eefc02d244d5811c4661ba73925ea969cc14cd8362079d0"
+                "asset_hash": "2256050fe6b5084eeedc7cefee627df86318f8f64aa0b69b19347ec9b4dae416"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/invoice_approval\/assets\/icon.png",
