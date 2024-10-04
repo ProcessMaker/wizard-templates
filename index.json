@@ -79,10 +79,10 @@
                 "modal-title": "",
                 "modal-excerpt": "Setup your expense tool in two easy steps:",
                 "modal-description": "Step 1: Set up your HR Platform",
-                "version": "3.2.4",
+                "version": "3.2.5",
                 "unique-template-id": "expense_report",
                 "helper_process_hash": "3dba54283aab428e706fe3e75ed5ae324f7d167b",
-                "template_process_hash": "291957fc0e5d3289c6b2b948db6803955cddc06f",
+                "template_process_hash": "86b7d52894862747b850a60d5a13c332d1650745",
                 "asset_hash": "e6e242d753c659c1981cd2a06e4971694851e8ca15e7d4833c6ad311c9ffc99e"
             },
             "assets": {
