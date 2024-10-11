@@ -14,7 +14,7 @@
                 "unique-template-id": "nonpo_invoice_approval",
                 "helper_process_hash": "d998d7f0da8b480a27ba0ec7a8b5839ed9136643",
                 "template_process_hash": "78b05bbe6ece6f155f76e530dab0098c313731d1",
-                "asset_hash": "ecb5b0bb270e32d0eddc5a891db6a53a838e86da28478736af750edad04197b5"
+                "asset_hash": "bb9ef9e98abe86f6a1b64f0f179c53a8f1d412d1f453bcadbbf6f920d7afb970"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/icon.png",
@@ -26,8 +26,8 @@
                 "launchpad": {
                     "process-card-background": "",
                     "slides": [
-                        ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.png",
                         ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/launchpad\/slides\/launchpad-slide2.png",
+                        ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.png",
                         ".\/accounting-and-finance\/nonpo_invoice_approval\/assets\/launchpad\/slides\/launchpad-slide3.png"
                     ]
                 }
@@ -48,7 +48,7 @@
                 "unique-template-id": "invoice_approval",
                 "helper_process_hash": "a9ddb4f9656e3634df0cd718b1d1f2ab8143b028",
                 "template_process_hash": "e69da5090ec63170f1564188fd2940659f2a1b45",
-                "asset_hash": "58885d2b9a122bbca8b73c8f21300a185614d912865a248b5527bd2cb3033ce9"
+                "asset_hash": "525323fe99ea8d864560a291ff3e3bff5ec3b4a67d7ec42aecfd0d5ebca8d169"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/invoice_approval\/assets\/icon.png",
@@ -60,10 +60,10 @@
                 "launchpad": {
                     "process-card-background": "",
                     "slides": [
-                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide3.jpg",
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.jpg",
                         ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide2.jpg",
                         ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide4.jpg",
-                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide1.jpg"
+                        ".\/accounting-and-finance\/invoice_approval\/assets\/launchpad\/slides\/launchpad-slide3.jpg"
                     ]
                 }
             },
@@ -79,11 +79,11 @@
                 "modal-title": "",
                 "modal-excerpt": "Setup your expense tool in two easy steps:",
                 "modal-description": "Step 1: Set up your HR Platform",
-                "version": "3.2.5",
+                "version": "3.2.6",
                 "unique-template-id": "expense_report",
                 "helper_process_hash": "3dba54283aab428e706fe3e75ed5ae324f7d167b",
-                "template_process_hash": "86b7d52894862747b850a60d5a13c332d1650745",
-                "asset_hash": "e6e242d753c659c1981cd2a06e4971694851e8ca15e7d4833c6ad311c9ffc99e"
+                "template_process_hash": "e70479fbd008842e24856d6a838e183ea56b6b79",
+                "asset_hash": "1d98ad510c9685e3985eb2ce977a8c0b293d67eebab9415beea356abfb0e5b35"
             },
             "assets": {
                 "icon": ".\/accounting-and-finance\/expense_report\/assets\/icon.png",
@@ -95,8 +95,8 @@
                 "launchpad": {
                     "process-card-background": "",
                     "slides": [
-                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide1.png",
                         ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide2.png",
+                        ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide1.png",
                         ".\/accounting-and-finance\/expense_report\/assets\/launchpad\/slides\/launchpad-slide3.png"
                     ]
                 }
