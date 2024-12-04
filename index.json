@@ -102,6 +102,38 @@
                 }
             },
             "connected_accounts": []
+        },
+        "smart_surveys": {
+            "helper_process": ".\/accounting-and-finance\/smart_surveys\/process_helper_export.json",
+            "template_process": ".\/accounting-and-finance\/smart_surveys\/process_template_export.json",
+            "config_collection": "",
+            "template_details": {
+                "card-title": "Smart Surveys",
+                "card-excerpt": "Approve and Reject Expenses with OCR",
+                "modal-title": "Welcome to ProcessMaker",
+                "modal-excerpt": "Let's set up your Smart Survey Process.",
+                "modal-description": "Complete this guided setup once to streamline your process and easily share Smart Surveys with collaborators.",
+                "version": "1.0.0",
+                "unique-template-id": "smart_surveys",
+                "helper_process_hash": "3a2f3db5dca394fe3e126bc2ab1dfc1dee335f1a",
+                "template_process_hash": "9d3e3f1902c3517275e06b6f00d2e4ef12ed8ce0",
+                "asset_hash": "3cbcd2323b2e5688ad3e04bf1b88fe38990416607234cf6e96b44f2b775fccec"
+            },
+            "assets": {
+                "icon": ".\/accounting-and-finance\/smart_surveys\/assets\/icon.png",
+                "list-icon": ".\/accounting-and-finance\/smart_surveys\/assets\/list-icon.png",
+                "card-background": ".\/accounting-and-finance\/smart_surveys\/assets\/card-background.png",
+                "slides": [
+                    ".\/accounting-and-finance\/smart_surveys\/assets\/slides\/slide1.png"
+                ],
+                "launchpad": {
+                    "process-card-background": "",
+                    "slides": [
+                        ".\/accounting-and-finance\/smart_surveys\/assets\/launchpad\/slides\/launchpad-slide1.png"
+                    ]
+                }
+            },
+            "connected_accounts": []
         }
     }
 }
