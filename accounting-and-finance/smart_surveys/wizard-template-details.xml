@@ -6,5 +6,5 @@
   modal-excerpt="Let's set up your Smart Survey Process."
   modal-description="Complete this guided setup once to streamline your process and easily share Smart Surveys with collaborators."
   unique-template-id="smart_surveys"
-  version="1.1.0" 
+  version="1.1.1" 
 ></wizard-template>
