@@ -4,4 +4,4 @@ Enhance the usability and functionality of ProcessMaker. These templates offer s
 - **[Expense Report]** (Version 3.2.8)
 - **[Guided Invoice Approval]** (Version 2.2.0)
 - **[Non-PO Invoice Approval]** (Version 1.9.4)
-- **[Smart Surveys]** (Version 1.1.1)
+- **[Smart Surveys]** (Version 1.1.2)
