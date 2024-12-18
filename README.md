@@ -3,4 +3,4 @@ Enhance the usability and functionality of ProcessMaker. These templates offer s
 ## Accounting And Finance
 - **[Expense Report]** (Version 3.2.8)
 - **[Non-PO Invoice Approval]** (Version 1.9.4)
-- **[Smart Surveys]** (Version 1.1.2)
+- **[Smart Surveys]** (Version 1.1.3)
