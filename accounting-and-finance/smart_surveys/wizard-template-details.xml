@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <wizard-template
   card-title="Smart Surveys"
-  card-excerpt="Approve and Reject Expenses with OCR"
+  card-excerpt="Easily create and execute surveys"
   modal-title="Welcome to ProcessMaker"
   modal-excerpt="Let's set up your Smart Survey Process."
   modal-description="Complete this guided setup once to streamline your process and easily share Smart Surveys with collaborators."
   unique-template-id="smart_surveys"
-  version="1.1.3" 
+  version="1.1.4" 
 ></wizard-template>
