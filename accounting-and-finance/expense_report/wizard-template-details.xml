@@ -3,7 +3,7 @@
   card-title="Expense Report"
   card-excerpt="Approve and Reject Expenses with OCR"
   modal-excerpt="Setup your expense tool in two easy steps:"
-  modal-description="Step 1: Set up your HR Platform"
+  modal-description="Step 1: Set up your HR Platform f"
   unique-template-id="expense_report"
   version="3.2.8" 
 ></wizard-template>
