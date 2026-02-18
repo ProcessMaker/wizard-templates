@@ -30,10 +30,11 @@ jobs:
       run: php .github/workflows/scripts/generate_index.php
       if: env.COMMITTER != 'action@github.com'
       
+    - uses: chainguard-dev/actions/setup-gitsign@main
     - name: Commit and push if it changed
       run: | 
         git diff
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git commit -am "Update index.json and README.md" || exit 0
+        git commit -S -am "Update index.json and README.md" || exit 0
         git push
