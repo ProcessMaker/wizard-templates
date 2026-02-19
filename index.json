@@ -78,7 +78,7 @@
                 "modal-description": "Set up an email address to receive invoices from suppliers and users.; Add the users from your company who you want to use the system.; Add the list of GL account codes to allocate invoice line items.",
                 "version": "1.9.4",
                 "unique-template-id": "nonpo_invoice_approval",
-                "helper_process_hash": "d998d7f0da8b480a27ba0ec7a8b5839ed9136643",
+                "helper_process_hash": "a738758f2c79f45e1cded1a024d773dc7b831061",
                 "template_process_hash": "78b05bbe6ece6f155f76e530dab0098c313731d1",
                 "asset_hash": "55b48f70d44b12ac1fda6f4a0546c6d860e14642c83531a811c56759746cf865"
             },
